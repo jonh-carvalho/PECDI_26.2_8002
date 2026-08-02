@@ -1,51 +1,51 @@
 ---
-repo_url: https://github.com/jonh-carvalho/PECD1_26.1_8001
+repo_url: https://github.com/jonh-carvalho/PECD1_26.2_8002
 site_author: Jonh Carvalho
-site_name: PECD1_26.1_8001
+site_name: PECD1_26.2_8002
 copyright: Copyright ©️ 2026, Jonh Carvalho
 
 nav: 
   - Home: index.md
   - Disciplina:
       - Aulas: Disciplina/aulas.md
-      - React:
-              - 1 - Introdução: React/01_Intro.md
-              - 2 - Node.js Vite React: React\02_NodeViteReact.md
-              - 3 - JSX: React\03_JSX_Sintaxe.md
-              - 4 - Componentes: React\04_Componentes.md
-              - 5 - Props: React\05_Props_e_Comunicação.md
-              - 6 - Estado: React\06_useState.md
-              - 7 - Eventos: React\07_Eventos_e_Forms.md
-              - 8 - Listas: React\08_Listas__Render_Condicional.md
-              - 9 - Http Api: React\09_HTTP_APIs.md
-              - 10 - useEffect: React\10_useEffect.md
-              - 11 - Filtros Básicos: React\11_Filtros_Basicos.md
-              - 12 - Favoritos e Persistência: React\12_Favoritos_localStorage.md
-              - 13 - Busca Avançada e Refinamentos: React\13_Filtros_Busca.md
-              - 14 - Rotas (React Router): React\14_Rotas_ReactRouter.md
-              - 15 - Estilização Avançada: React\15_Estilizacao_Avancada.md
+#      - React:
+#              - 1 - Introdução: React/01_Intro.md
+#              - 2 - Node.js Vite React: React\02_NodeViteReact.md
+#              - 3 - JSX: React\03_JSX_Sintaxe.md
+#              - 4 - Componentes: React\04_Componentes.md
+#              - 5 - Props: React\05_Props_e_Comunicação.md
+#              - 6 - Estado: React\06_useState.md
+#              - 7 - Eventos: React\07_Eventos_e_Forms.md
+#              - 8 - Listas: React\08_Listas__Render_Condicional.md
+#              - 9 - Http Api: React\09_HTTP_APIs.md
+#              - 10 - useEffect: React\10_useEffect.md
+#              - 11 - Filtros Básicos: React\11_Filtros_Basicos.md
+#              - 12 - Favoritos e Persistência: React\12_Favoritos_localStorage.md
+#              - 13 - Busca Avançada e Refinamentos: React\13_Filtros_Busca.md
+#              - 14 - Rotas (React Router): React\14_Rotas_ReactRouter.md
+#              - 15 - Estilização Avançada: React\15_Estilizacao_Avancada.md
       - Ambiente: Disciplina/ambiente.md
       - Github: Disciplina/github.md
       - Mkdocs: Disciplina/mkdocs.md
-      - CodeSpace: Disciplina/codespace.md
-      - Roteiros: 
-          - Design Thinking: Disciplina/Roteiros/04_design_thinking.md
-          - AHT: Disciplina/Roteiros/07_aht.md
-          - Sprint Planning: Disciplina/Roteiros/07_receitas.md
-          - Epic, Feature, User Story: Disciplina/Roteiros/07_epics_features_user_stories.md
-          - Protótipo de Baixa Fidelidade: Disciplina/Roteiros/07_proto.md
-          - JSON Server (CadProj): Disciplina/Roteiros/16_json_server_cadproj.md
-          - Router (React Router): Disciplina/Roteiros/16_router.md
+      - CodeSpace: Disciplina/CodeSpace.md
+#      - Roteiros: 
+#          - Design Thinking: Disciplina/Roteiros/04_design_thinking.md
+#          - AHT: Disciplina/Roteiros/07_aht.md
+#          - Sprint Planning: Disciplina/Roteiros/07_receitas.md
+#          - Epic, Feature, User Story: Disciplina/Roteiros/07_epics_features_user_stories.md
+#          - Protótipo de Baixa Fidelidade: Disciplina/Roteiros/07_proto.md
+#          - JSON Server (CadProj): Disciplina/Roteiros/16_json_server_cadproj.md
+#          - Router (React Router): Disciplina/Roteiros/16_router.md
   
   - Design Thinking:
       - Index: Design Thinking/index.md
       - Pesquisa: Design Thinking/pesquisa.md
       - Cenário: Design Thinking/cenario.md
       - 5w2h: Design Thinking/5w2h.md
-      - Brainstorming: Design Thinking/brainstorm.md
+      - Brainstorming: Design Thinking/Brainstorm.md
       - Mapa Mental: Design Thinking/mapa_mental.md
       - Design Thinking: Design Thinking/design_thinking.md
-      - História de Usuário: Design Thinking/historia_de_usuario.md
+      - História de Usuário: Design Thinking/historiasde_usuario.md
       - Análise de Tarefas: Design Thinking/analise_de_tarefas.md
       - Prototipagem Baixa Fidelidade: Design Thinking/prototipo_baixa_fidelidade.md
   - Sprint Planning:

@@ -2,10 +2,14 @@
 
 Aula | Conteúdo
 : --- | --- : 
-**__01__ - 23/02/26** | :material-check: Apresentação da Disciplina <br> :material-check: Processo de Desenvolvimento  - [Do Cascata ao Ágil](../assets/Aulas/Do%20Cascata%20ao%20Ágil.pdf)
-**__02__ - 02/03/26** | :material-check: Configuração de [Ambiente de Desenvolvimento](Disciplina/ambiente)
-**__03__ - 09/03/26** | :material-check: [Scrum](../assets/Aulas/Mapa+do+Scrum+Framework+utilizado+nas+aulas.pdf) - [Metodologias Ágeis](../assets/Aulas/Scrum.pdf)
-**__04__ - 16/03/26** | :material-check: Apresentação de Tema do Projeto, Principais Funcionalidades do Projeto, App Web Similares r
+**__01__ - 03/08/26** | :material-check: Apresentação da Disciplina <br> :material-check: Processo de Desenvolvimento  - [Do Cascata ao Ágil](../assets/Aulas/Do%20Cascata%20ao%20Ágil.pdf)
+**__02__ - 10/08/26** | :material-check: Configuração de [Ambiente de Desenvolvimento](Disciplina/ambiente)
+**__03__ - 17/08/26** | :material-check: [Scrum](../assets/Aulas/Mapa+do+Scrum+Framework+utilizado+nas+aulas.pdf) - [Metodologias Ágeis](../assets/Aulas/Scrum.pdf)
+**__04__ - 24/08/26** | :material-check: Apresentação de Tema do Projeto, Principais Funcionalidades do Projeto, App Web Similares r
+
+<!--
+
+
 **__05__ - 23/09/26** | :material-check: Site Mkdocs  <br> :material-check: Configuração repositório Github <br> :material-check: Design Thinking
 **__06__ - 30/03/26** | :material-check: 5w2h <br> :material-check:[Brainstorm](../assets/Aulas/O%20processo%20de brainstorm.pdf) <br> :material-check: [Mapa Mental](../assets/Aulas/Mapa%20Mental.pdf)
 **__07__ - 06/04/25** |  <br> [Análise de Tarefas - AHT](../assets/Aulas/Análise%20de%20Tarefas.pdf) <br> - [Roteiro](./Roteiros/07_epics_features_user_stories.md) <br> :material-check: Protótipo de Baixa Fidelidade
@@ -21,6 +25,7 @@ Aula | Conteúdo
 **__17__ - 15/06/26** | :material-check: **AP2 - Apresentação**
 **__18__ - 22/06/26** | :material-check: 
 **__19__ - 29/06/26** | :material-check: AS
+-->
 
 <!--
 | Aula          - | Conteúdo |
