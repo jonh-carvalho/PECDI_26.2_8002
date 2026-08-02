@@ -1,0 +1,1492 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Jonh Carvalho">
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/ibmec_icon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
+    
+    
+      
+        <title>Análise de Tarefas - PECD1_26.2_8002</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../../assets/mkdocs_puml/puml.css">
+    
+      <link rel="stylesheet" href="../../../assets/mkdocs_puml/interaction.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#07-analise-de-tarefas" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="PECD1_26.2_8002" class="md-header__button md-logo" aria-label="PECD1_26.2_8002" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236m2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38a2.17 2.17 0 0 0-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44a23.5 23.5 0 0 0-3.107-.534A24 24 0 0 0 12.769 4.7c1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442a23 23 0 0 0-3.113.538 15 15 0 0 1-.254-1.42c-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05q.684.704 1.36 1.564c-.44-.02-.89-.034-1.345-.034q-.691-.001-1.36.034c.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093q.61.874 1.183 1.86.557.961 1.018 1.946c-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87a25.6 25.6 0 0 1-4.412.005 27 27 0 0 1-1.183-1.86q-.557-.961-1.018-1.946a25 25 0 0 1 1.013-1.954c.38-.66.773-1.286 1.18-1.868A25 25 0 0 1 12 8.098zm-3.635.254c-.24.377-.48.763-.704 1.16q-.336.585-.635 1.174c-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0q1.044.153 2.006.387c-.18.632-.405 1.282-.66 1.933a25.952 25.952 0 0 0-1.345-2.32zm3.063.675q.727.226 1.375.498c1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493a24 24 0 0 0-1.1-2.98c.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98a23 23 0 0 0-1.086 2.964c-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474s1.12-1.742 2.852-2.476c.42-.18.88-.342 1.356-.494m11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39a26 26 0 0 0 1.341-2.338zm-9.945.02c.2.392.41.783.64 1.175q.345.586.705 1.143a22 22 0 0 1-2.006-.386c.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295a1.2 1.2 0 0 1-.553-.132c-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64q.661.032 1.345.034.691.001 1.36-.034c-.44.572-.895 1.095-1.345 1.565q-.684-.706-1.36-1.565"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            PECD1_26.2_8002
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Análise de Tarefas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1M8 13h8v-2H8zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4a5 5 0 0 0 5-5 5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-orange" data-md-color-accent="white"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="white" data-md-color-accent="white"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5M7 15a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jonh-carvalho/PECD1_26.2_8002" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../aulas/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Disciplina
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Design%20Thinking/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Design Thinking
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Sprint%20Planning/planejamento/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Sprint Planning
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="PECD1_26.2_8002" class="md-nav__button md-logo" aria-label="PECD1_26.2_8002" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236m2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38a2.17 2.17 0 0 0-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44a23.5 23.5 0 0 0-3.107-.534A24 24 0 0 0 12.769 4.7c1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442a23 23 0 0 0-3.113.538 15 15 0 0 1-.254-1.42c-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05q.684.704 1.36 1.564c-.44-.02-.89-.034-1.345-.034q-.691-.001-1.36.034c.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093q.61.874 1.183 1.86.557.961 1.018 1.946c-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87a25.6 25.6 0 0 1-4.412.005 27 27 0 0 1-1.183-1.86q-.557-.961-1.018-1.946a25 25 0 0 1 1.013-1.954c.38-.66.773-1.286 1.18-1.868A25 25 0 0 1 12 8.098zm-3.635.254c-.24.377-.48.763-.704 1.16q-.336.585-.635 1.174c-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0q1.044.153 2.006.387c-.18.632-.405 1.282-.66 1.933a25.952 25.952 0 0 0-1.345-2.32zm3.063.675q.727.226 1.375.498c1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493a24 24 0 0 0-1.1-2.98c.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98a23 23 0 0 0-1.086 2.964c-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474s1.12-1.742 2.852-2.476c.42-.18.88-.342 1.356-.494m11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39a26 26 0 0 0 1.341-2.338zm-9.945.02c.2.392.41.783.64 1.175q.345.586.705 1.143a22 22 0 0 1-2.006-.386c.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295a1.2 1.2 0 0 1-.553-.132c-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64q.661.032 1.345.034.691.001 1.36-.034c-.44.572-.895 1.095-1.345 1.565q-.684-.706-1.36-1.565"/></svg>
+
+    </a>
+    PECD1_26.2_8002
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jonh-carvalho/PECD1_26.2_8002" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Disciplina
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Disciplina
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../aulas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aulas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ambiente/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ambiente
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../github/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Github
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mkdocs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mkdocs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CodeSpace/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CodeSpace
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roteiros
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Roteiros
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_proto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Protótipo de Baixa Fidelidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../Design%20Thinking/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design Thinking
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Design Thinking
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Design%20Thinking/pesquisa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pesquisa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Design%20Thinking/cenario/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cenário
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Design%20Thinking/5w2h/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5w2h
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Design%20Thinking/Brainstorm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Brainstorming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Design%20Thinking/mapa_mental/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mapa Mental
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Design%20Thinking/design_thinking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Design Thinking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Design Thinking/historiasde_usuario.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    História de Usuário
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Design%20Thinking/analise_de_tarefas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Análise de Tarefas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Design%20Thinking/prototipo_baixa_fidelidade/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prototipagem Baixa Fidelidade
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sprint Planning
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sprint Planning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Sprint%20Planning/planejamento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Planejamento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Sprint%20Planning/product_backlog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Product Backlog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Sprint%20Planning/sprint_backlog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sprint Backlog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Sprint%20Planning/definicao_de_pronto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Definição de Pronto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="07-analise-de-tarefas">07 - <strong>Análise de Tarefas</strong><a class="headerlink" href="#07-analise-de-tarefas" title="Permanent link">&para;</a></h1>
+<p><strong>Contexto:</strong>  </p>
+<p>Uma empresa de e-commerce está desenvolvendo um <strong>novo aplicativo web</strong> para facilitar a gestão de pedidos, estoque e atendimento ao cliente. A equipe de UX/UI precisa realizar uma <strong>análise de tarefas</strong> para entender como os usuários (vendedores, gerentes e clientes) interagem com o sistema atual e identificar oportunidades de melhoria.  </p>
+<hr />
+<h2 id="1-objetivo-da-analise-de-tarefas"><strong>1. Objetivo da Análise de Tarefas</strong><a class="headerlink" href="#1-objetivo-da-analise-de-tarefas" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Mapear as principais tarefas realizadas pelos usuários no sistema atual.  </li>
+<li>Identificar pontos de dificuldade, redundâncias e oportunidades de otimização.  </li>
+<li>Validar se o novo aplicativo atenderá às necessidades dos usuários.  </li>
+</ul>
+<hr />
+<h2 id="2-publico-alvo-personas"><strong>2. Público-Alvo (Personas)</strong><a class="headerlink" href="#2-publico-alvo-personas" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Perfil</th>
+<th>Tarefas Principais</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Vendedor</strong></td>
+<td>Registrar pedidos, consultar estoque</td>
+</tr>
+<tr>
+<td><strong>Gerente</strong></td>
+<td>Aprovar descontos, gerar relatórios</td>
+</tr>
+<tr>
+<td><strong>Cliente</strong></td>
+<td>Acompanhar pedido, solicitar suporte</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3-metodos-de-coleta-de-dados"><strong>3. Métodos de Coleta de Dados</strong><a class="headerlink" href="#3-metodos-de-coleta-de-dados" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Entrevistas com usuários:</strong> Perguntar sobre fluxos de trabalho e desafios.  </li>
+<li><strong>Observação contextual:</strong> Acompanhar usuários em seu ambiente real.  </li>
+<li><strong>Questionários online:</strong> Coletar feedback quantitativo.  </li>
+<li><strong>Análise de logs:</strong> Verificar padrões de uso no sistema atual.  </li>
+</ul>
+<hr />
+<h2 id="4-principais-tarefas-a-serem-analisadas"><strong>4. Principais Tarefas a Serem Analisadas</strong><a class="headerlink" href="#4-principais-tarefas-a-serem-analisadas" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Tarefa</th>
+<th>Passos Identificados</th>
+<th>Possíveis Problemas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Registrar pedido</strong></td>
+<td>1. Buscar cliente → 2. Adicionar itens → 3. Aplicar desconto (se necessário) → 4. Finalizar venda</td>
+<td>Lentidão na busca de produtos</td>
+</tr>
+<tr>
+<td><strong>Consultar estoque</strong></td>
+<td>1. Filtrar por categoria → 2. Ver disponibilidade → 3. Checar previsão de reposição</td>
+<td>Dados desatualizados</td>
+</tr>
+<tr>
+<td><strong>Gerar relatório</strong></td>
+<td>1. Selecionar período → 2. Escolher métricas → 3. Exportar PDF/Excel</td>
+<td>Interface confusa</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-ferramentas-utilizadas"><strong>5. Ferramentas Utilizadas</strong><a class="headerlink" href="#5-ferramentas-utilizadas" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Mapeamento de fluxo:</strong> <strong>Figma</strong> ou <strong>Miro</strong> para diagramas.  </li>
+<li><strong>Gravação de sessões:</strong> <strong>Hotjar</strong> ou <strong>Lookback</strong> para análise de interações.  </li>
+<li><strong>Organização de dados:</strong> <strong>Excel</strong> ou <strong>Airtable</strong> para catalogar tarefas.  </li>
+</ul>
+<hr />
+<h2 id="6-resultados-esperados"><strong>6. Resultados Esperados</strong><a class="headerlink" href="#6-resultados-esperados" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Lista de tarefas críticas</strong> a serem otimizadas no novo app.  </li>
+<li><strong>Protótipo de fluxos</strong> aprimorados (ex.: checkout em menos etapas).  </li>
+<li><strong>Relatório de insights</strong> com recomendações para a equipe de desenvolvimento.  </li>
+</ul>
+<hr />
+<h2 id="7-proximos-passos"><strong>7. Próximos Passos</strong><a class="headerlink" href="#7-proximos-passos" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Validar os resultados com stakeholders.  </li>
+<li>Priorizar melhorias com base na análise.  </li>
+<li>Aplicar mudanças no design do novo aplicativo.  </li>
+</ol>
+<hr />
+<p><strong>Conclusão:</strong><br />
+A análise de tarefas ajudará a garantir que o novo aplicativo web seja <strong>intuitivo, eficiente e alinhado</strong> com as necessidades reais dos usuários.  </p>
+<hr />
+<p>Aqui está um diagrama <strong>WBS (Work Breakdown Structure)</strong> em <strong>PlantUML</strong> para representar as tarefas da análise de tarefas do aplicativo web:</p>
+<div class='puml-container'><div class="puml light" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" data-diagram-type="WBS" style="width:2523px;height:785px;background:#FFFFFF;" width="2523px" height="785px" viewBox="0 0 2523 785" zoomAndPan="magnify" preserveAspectRatio="xMidYMid meet" contentStyleType="text/css" class="diagram"><?plantuml 1.2026.7beta11?><defs/><g font-family="sans-serif" lengthAdjust="spacing"><line x1="105.41" y1="73.969" x2="105.41" y2="93.969" style="stroke:#000;stroke-width:1.5;"/><rect x="20" y="93.969" width="170.82" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="30" y="115.107" fill="#000" font-size="12" textLength="150.82">1. Definição de Objetivos</text><line x1="105.41" y1="159.922" x2="115.41" y2="159.922" style="stroke:#000;stroke-width:1.5;"/><rect x="115.41" y="142.938" width="279.799" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="125.41" y="164.076" fill="#000" font-size="12" textLength="259.799">1.1. Identificar tarefas críticas dos usuários</text><line x1="105.41" y1="208.891" x2="115.41" y2="208.891" style="stroke:#000;stroke-width:1.5;"/><rect x="115.41" y="191.906" width="225.031" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="125.41" y="213.045" fill="#000" font-size="12" textLength="205.031">1.2. Mapear pontos de dificuldade</text><line x1="105.41" y1="257.859" x2="115.41" y2="257.859" style="stroke:#000;stroke-width:1.5;"/><rect x="115.41" y="240.875" width="229.801" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="125.41" y="262.014" fill="#000" font-size="12" textLength="209.801">1.3. Validar requisitos do novo app</text><line x1="105.41" y1="127.938" x2="105.41" y2="257.859" style="stroke:#000;stroke-width:1.5;"/><line x1="482.306" y1="73.969" x2="482.306" y2="93.969" style="stroke:#000;stroke-width:1.5;"/><rect x="415.209" y="93.969" width="134.193" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="425.209" y="115.107" fill="#000" font-size="12" textLength="114.193">2. Coleta de Dados</text><line x1="482.306" y1="159.922" x2="492.306" y2="159.922" style="stroke:#000;stroke-width:1.5;"/><rect x="492.306" y="142.938" width="401.334" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="502.306" y="164.076" fill="#000" font-size="12" textLength="381.334">2.1. Entrevistas com usuários (Vendedores, Gerentes, Clientes)</text><line x1="482.306" y1="208.891" x2="492.306" y2="208.891" style="stroke:#000;stroke-width:1.5;"/><rect x="492.306" y="191.906" width="185.639" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="502.306" y="213.045" fill="#000" font-size="12" textLength="165.639">2.2. Observação contextual</text><line x1="482.306" y1="257.859" x2="492.306" y2="257.859" style="stroke:#000;stroke-width:1.5;"/><rect x="492.306" y="240.875" width="170.018" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="502.306" y="262.014" fill="#000" font-size="12" textLength="150.018">2.3. Questionários online</text><line x1="482.306" y1="306.828" x2="492.306" y2="306.828" style="stroke:#000;stroke-width:1.5;"/><rect x="492.306" y="289.844" width="241.08" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="502.306" y="310.982" fill="#000" font-size="12" textLength="221.08">2.4. Análise de logs do sistema atual</text><line x1="482.306" y1="127.938" x2="482.306" y2="306.828" style="stroke:#000;stroke-width:1.5;"/><line x1="1020.554" y1="73.969" x2="1020.554" y2="93.969" style="stroke:#000;stroke-width:1.5;"/><rect x="913.64" y="93.969" width="213.828" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="923.64" y="115.107" fill="#000" font-size="12" textLength="193.828">3. Análise das Tarefas Principais</text><line x1="1020.554" y1="159.922" x2="1030.554" y2="159.922" style="stroke:#000;stroke-width:1.5;"/><rect x="1030.554" y="142.938" width="145.906" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1040.554" y="164.076" fill="#000" font-size="12" textLength="125.906">3.1. Registrar Pedido</text><line x1="1103.507" y1="208.891" x2="1113.507" y2="208.891" style="stroke:#000;stroke-width:1.5;"/><rect x="1113.507" y="191.906" width="143.293" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1123.507" y="213.045" fill="#000" font-size="12" textLength="123.293">3.1.1. Buscar cliente</text><line x1="1103.507" y1="257.859" x2="1113.507" y2="257.859" style="stroke:#000;stroke-width:1.5;"/><rect x="1113.507" y="240.875" width="147.582" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1123.507" y="262.014" fill="#000" font-size="12" textLength="127.582">3.1.2. Adicionar itens</text><line x1="1103.507" y1="306.828" x2="1113.507" y2="306.828" style="stroke:#000;stroke-width:1.5;"/><rect x="1113.507" y="289.844" width="253.262" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1123.507" y="310.982" fill="#000" font-size="12" textLength="233.262">3.1.3. Aplicar desconto (se necessário)</text><line x1="1103.507" y1="355.797" x2="1113.507" y2="355.797" style="stroke:#000;stroke-width:1.5;"/><rect x="1113.507" y="338.813" width="149.486" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1123.507" y="359.951" fill="#000" font-size="12" textLength="129.486">3.1.4. Finalizar venda</text><line x1="1103.507" y1="176.906" x2="1103.507" y2="355.797" style="stroke:#000;stroke-width:1.5;"/><line x1="1020.554" y1="404.766" x2="1030.554" y2="404.766" style="stroke:#000;stroke-width:1.5;"/><rect x="1030.554" y="387.781" width="156.523" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1040.554" y="408.92" fill="#000" font-size="12" textLength="136.523">3.2. Consultar Estoque</text><line x1="1108.815" y1="453.734" x2="1118.815" y2="453.734" style="stroke:#000;stroke-width:1.5;"/><rect x="1118.815" y="436.75" width="177.799" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1128.815" y="457.889" fill="#000" font-size="12" textLength="157.799">3.2.1. Filtrar por categoria</text><line x1="1108.815" y1="502.703" x2="1118.815" y2="502.703" style="stroke:#000;stroke-width:1.5;"/><rect x="1118.815" y="485.719" width="173.193" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1128.815" y="506.857" fill="#000" font-size="12" textLength="153.193">3.2.2. Ver disponibilidade</text><line x1="1108.815" y1="551.672" x2="1118.815" y2="551.672" style="stroke:#000;stroke-width:1.5;"/><rect x="1118.815" y="534.688" width="236.328" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1128.815" y="555.826" fill="#000" font-size="12" textLength="216.328">3.2.3. Checar previsão de reposição</text><line x1="1108.815" y1="421.75" x2="1108.815" y2="551.672" style="stroke:#000;stroke-width:1.5;"/><line x1="1020.554" y1="600.641" x2="1030.554" y2="600.641" style="stroke:#000;stroke-width:1.5;"/><rect x="1030.554" y="583.656" width="138.494" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1040.554" y="604.795" fill="#000" font-size="12" textLength="118.494">3.3. Gerar Relatório</text><line x1="1099.801" y1="649.609" x2="1109.801" y2="649.609" style="stroke:#000;stroke-width:1.5;"/><rect x="1109.801" y="632.625" width="170.428" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1119.801" y="653.764" fill="#000" font-size="12" textLength="150.428">3.3.1. Selecionar período</text><line x1="1099.801" y1="698.578" x2="1109.801" y2="698.578" style="stroke:#000;stroke-width:1.5;"/><rect x="1109.801" y="681.594" width="165.254" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1119.801" y="702.732" fill="#000" font-size="12" textLength="145.254">3.3.2. Escolher métricas</text><line x1="1099.801" y1="747.547" x2="1109.801" y2="747.547" style="stroke:#000;stroke-width:1.5;"/><rect x="1109.801" y="730.563" width="182.328" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1119.801" y="751.701" fill="#000" font-size="12" textLength="162.328">3.3.3. Exportar (PDF/Excel)</text><line x1="1099.801" y1="617.625" x2="1099.801" y2="747.547" style="stroke:#000;stroke-width:1.5;"/><line x1="1020.554" y1="127.938" x2="1020.554" y2="600.641" style="stroke:#000;stroke-width:1.5;"/><line x1="1485.778" y1="73.969" x2="1485.778" y2="93.969" style="stroke:#000;stroke-width:1.5;"/><rect x="1386.769" y="93.969" width="198.02" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1396.769" y="115.107" fill="#000" font-size="12" textLength="178.02">4. Identificação de Problemas</text><line x1="1485.778" y1="159.922" x2="1495.778" y2="159.922" style="stroke:#000;stroke-width:1.5;"/><rect x="1495.778" y="142.938" width="232.795" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1505.778" y="164.076" fill="#000" font-size="12" textLength="212.795">4.1. Lentidão na busca de produtos</text><line x1="1485.778" y1="208.891" x2="1495.778" y2="208.891" style="stroke:#000;stroke-width:1.5;"/><rect x="1495.778" y="191.906" width="249.049" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1505.778" y="213.045" fill="#000" font-size="12" textLength="229.049">4.2. Dados de estoque desatualizados</text><line x1="1485.778" y1="257.859" x2="1495.778" y2="257.859" style="stroke:#000;stroke-width:1.5;"/><rect x="1495.778" y="240.875" width="243.031" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1505.778" y="262.014" fill="#000" font-size="12" textLength="223.031">4.3. Interface confusa para relatórios</text><line x1="1485.778" y1="127.938" x2="1485.778" y2="257.859" style="stroke:#000;stroke-width:1.5;"/><line x1="1849.109" y1="73.969" x2="1849.109" y2="93.969" style="stroke:#000;stroke-width:1.5;"/><rect x="1764.827" y="93.969" width="168.564" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1774.827" y="115.107" fill="#000" font-size="12" textLength="148.564">5. Proposta de Melhorias</text><line x1="1849.109" y1="159.922" x2="1859.109" y2="159.922" style="stroke:#000;stroke-width:1.5;"/><rect x="1859.109" y="142.938" width="208.643" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1869.109" y="164.076" fill="#000" font-size="12" textLength="188.643">5.1. Otimizar fluxo de checkout</text><line x1="1849.109" y1="208.891" x2="1859.109" y2="208.891" style="stroke:#000;stroke-width:1.5;"/><rect x="1859.109" y="191.906" width="256.631" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1869.109" y="213.045" fill="#000" font-size="12" textLength="236.631">5.2. Melhorar sincronização de estoque</text><line x1="1849.109" y1="257.859" x2="1859.109" y2="257.859" style="stroke:#000;stroke-width:1.5;"/><rect x="1859.109" y="240.875" width="255.441" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1869.109" y="262.014" fill="#000" font-size="12" textLength="235.441">5.3. Redesenhar interface de relatórios</text><line x1="1849.109" y1="127.938" x2="1849.109" y2="257.859" style="stroke:#000;stroke-width:1.5;"/><line x1="2223.154" y1="73.969" x2="2223.154" y2="93.969" style="stroke:#000;stroke-width:1.5;"/><rect x="2135.74" y="93.969" width="174.828" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="2145.74" y="115.107" fill="#000" font-size="12" textLength="154.828">6. Validação e Priorização</text><line x1="2223.154" y1="159.922" x2="2233.154" y2="159.922" style="stroke:#000;stroke-width:1.5;"/><rect x="2233.154" y="142.938" width="269.293" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="2243.154" y="164.076" fill="#000" font-size="12" textLength="249.293">6.1. Apresentar insights aos stakeholders</text><line x1="2223.154" y1="208.891" x2="2233.154" y2="208.891" style="stroke:#000;stroke-width:1.5;"/><rect x="2233.154" y="191.906" width="159.453" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="2243.154" y="213.045" fill="#000" font-size="12" textLength="139.453">6.2. Priorizar melhorias</text><line x1="2223.154" y1="257.859" x2="2233.154" y2="257.859" style="stroke:#000;stroke-width:1.5;"/><rect x="2233.154" y="240.875" width="154.109" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="2243.154" y="262.014" fill="#000" font-size="12" textLength="134.109">6.3. Ajustar protótipos</text><line x1="2223.154" y1="127.938" x2="2223.154" y2="257.859" style="stroke:#000;stroke-width:1.5;"/><line x1="105.41" y1="73.969" x2="2223.154" y2="73.969" style="stroke:#000;stroke-width:1.5;"/><rect x="998.956" y="20" width="330.652" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1008.956" y="41.139" fill="#000" font-size="12" textLength="310.652">Análise de Tarefas - Aplicativo Web de E-commerce</text><line x1="1164.282" y1="53.969" x2="1164.282" y2="73.969" style="stroke:#000;stroke-width:1.5;"/><?plantuml-src LLJDJXin6BpdAIpr0gYaa41w9K1I8HL1QKNFtlMNh8dNNlmJ8ju6zL3rq5CV8I_M-RoR7t9QPSQpyyryteiGfOylHUY5XRQDzB8MjREkhBohIKIVQ0y9bLJkHTkvc4aJzf6nz-xboXddnOUJ_Di3BsMvc7kNhEeOq_phzOx4sAxVZ0ua58aVqjDC1d4inetHfOnwwSHFAXYR79UkhicNr3iw4gTzSKqpRVNwz_gNO_okU2Bc1y2CWt6Zo4OzWv0NiPCk_Vfln3z1A1T42cdzvlNsqA0lRcL3u3VEHX0Wh5WX6IKLTQnXNpnAenLedfwJ3ZfJdR0EVcNJi4D8OLQAaZMkaLhxZW4RczZeQQcHF0ovUcT373oILQISf_1HV26F0VZfokZyTDXfGFok2EINifs_X5jQnIHDHu35Rub2rCvsoiuQRQc3p_hlSZTkdlq7MA9Q2jafYU4-3sOt1TrxRKlTIDqEDUIX7cYEunwXt9FIoZ7IGW0lK-0ModQE7OH1nagNi0bKHx9XX_7BynfuU0myeXC7C6Aff13oM8SxDaQQQejQNi5V8aNPMSj5s90CLa1CGdJFQMiWjp7L9jjki9ZOEPexh-MEWVEF10iwO2TqeRbujQS0crSLiSicbzhjewV6XNOzEoCWeb7m7iZ8kFu7_nkL7E1tCjGbqH3MrAaz72ucoC1Ki5Al_qJFExo3eJrPOG2UyU3-UlffiYh9S3pYRFyYRA_BlNU5GTTjWMVy_gzCKenRAGekZ8cDTof5j-71HrvcXgWDazl96uFerPO8HpUesizaIRoVinIauAy1ajcCprnntcSp2AkzAhTaAYwWrJbdOtTHrxdMcKchxBv4u0kNOiVXQvkFWHEmcHv5lUvcfLtf80zvLM6PRCKxj_MOEtldRBIvvwqIXwPXhLFESYFsDqRna8jPBkXv5OEGY0WJBQXoHf4F7NlGtugWntUZZlB2FoN-7dFgC18rOkbTO9dv-zp3TJaPZFgV2tnLJa__0m00?></g></svg></div><div class="puml dark" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" data-diagram-type="WBS" style="width:2523px;height:785px;background:#FFFFFF;" width="2523px" height="785px" viewBox="0 0 2523 785" zoomAndPan="magnify" preserveAspectRatio="xMidYMid meet" contentStyleType="text/css" class="diagram"><?plantuml 1.2026.7beta11?><defs/><g font-family="sans-serif" lengthAdjust="spacing"><line x1="105.41" y1="73.969" x2="105.41" y2="93.969" style="stroke:#000;stroke-width:1.5;"/><rect x="20" y="93.969" width="170.82" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="30" y="115.107" fill="#000" font-size="12" textLength="150.82">1. Definição de Objetivos</text><line x1="105.41" y1="159.922" x2="115.41" y2="159.922" style="stroke:#000;stroke-width:1.5;"/><rect x="115.41" y="142.938" width="279.799" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="125.41" y="164.076" fill="#000" font-size="12" textLength="259.799">1.1. Identificar tarefas críticas dos usuários</text><line x1="105.41" y1="208.891" x2="115.41" y2="208.891" style="stroke:#000;stroke-width:1.5;"/><rect x="115.41" y="191.906" width="225.031" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="125.41" y="213.045" fill="#000" font-size="12" textLength="205.031">1.2. Mapear pontos de dificuldade</text><line x1="105.41" y1="257.859" x2="115.41" y2="257.859" style="stroke:#000;stroke-width:1.5;"/><rect x="115.41" y="240.875" width="229.801" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="125.41" y="262.014" fill="#000" font-size="12" textLength="209.801">1.3. Validar requisitos do novo app</text><line x1="105.41" y1="127.938" x2="105.41" y2="257.859" style="stroke:#000;stroke-width:1.5;"/><line x1="482.306" y1="73.969" x2="482.306" y2="93.969" style="stroke:#000;stroke-width:1.5;"/><rect x="415.209" y="93.969" width="134.193" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="425.209" y="115.107" fill="#000" font-size="12" textLength="114.193">2. Coleta de Dados</text><line x1="482.306" y1="159.922" x2="492.306" y2="159.922" style="stroke:#000;stroke-width:1.5;"/><rect x="492.306" y="142.938" width="401.334" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="502.306" y="164.076" fill="#000" font-size="12" textLength="381.334">2.1. Entrevistas com usuários (Vendedores, Gerentes, Clientes)</text><line x1="482.306" y1="208.891" x2="492.306" y2="208.891" style="stroke:#000;stroke-width:1.5;"/><rect x="492.306" y="191.906" width="185.639" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="502.306" y="213.045" fill="#000" font-size="12" textLength="165.639">2.2. Observação contextual</text><line x1="482.306" y1="257.859" x2="492.306" y2="257.859" style="stroke:#000;stroke-width:1.5;"/><rect x="492.306" y="240.875" width="170.018" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="502.306" y="262.014" fill="#000" font-size="12" textLength="150.018">2.3. Questionários online</text><line x1="482.306" y1="306.828" x2="492.306" y2="306.828" style="stroke:#000;stroke-width:1.5;"/><rect x="492.306" y="289.844" width="241.08" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="502.306" y="310.982" fill="#000" font-size="12" textLength="221.08">2.4. Análise de logs do sistema atual</text><line x1="482.306" y1="127.938" x2="482.306" y2="306.828" style="stroke:#000;stroke-width:1.5;"/><line x1="1020.554" y1="73.969" x2="1020.554" y2="93.969" style="stroke:#000;stroke-width:1.5;"/><rect x="913.64" y="93.969" width="213.828" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="923.64" y="115.107" fill="#000" font-size="12" textLength="193.828">3. Análise das Tarefas Principais</text><line x1="1020.554" y1="159.922" x2="1030.554" y2="159.922" style="stroke:#000;stroke-width:1.5;"/><rect x="1030.554" y="142.938" width="145.906" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1040.554" y="164.076" fill="#000" font-size="12" textLength="125.906">3.1. Registrar Pedido</text><line x1="1103.507" y1="208.891" x2="1113.507" y2="208.891" style="stroke:#000;stroke-width:1.5;"/><rect x="1113.507" y="191.906" width="143.293" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1123.507" y="213.045" fill="#000" font-size="12" textLength="123.293">3.1.1. Buscar cliente</text><line x1="1103.507" y1="257.859" x2="1113.507" y2="257.859" style="stroke:#000;stroke-width:1.5;"/><rect x="1113.507" y="240.875" width="147.582" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1123.507" y="262.014" fill="#000" font-size="12" textLength="127.582">3.1.2. Adicionar itens</text><line x1="1103.507" y1="306.828" x2="1113.507" y2="306.828" style="stroke:#000;stroke-width:1.5;"/><rect x="1113.507" y="289.844" width="253.262" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1123.507" y="310.982" fill="#000" font-size="12" textLength="233.262">3.1.3. Aplicar desconto (se necessário)</text><line x1="1103.507" y1="355.797" x2="1113.507" y2="355.797" style="stroke:#000;stroke-width:1.5;"/><rect x="1113.507" y="338.813" width="149.486" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1123.507" y="359.951" fill="#000" font-size="12" textLength="129.486">3.1.4. Finalizar venda</text><line x1="1103.507" y1="176.906" x2="1103.507" y2="355.797" style="stroke:#000;stroke-width:1.5;"/><line x1="1020.554" y1="404.766" x2="1030.554" y2="404.766" style="stroke:#000;stroke-width:1.5;"/><rect x="1030.554" y="387.781" width="156.523" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1040.554" y="408.92" fill="#000" font-size="12" textLength="136.523">3.2. Consultar Estoque</text><line x1="1108.815" y1="453.734" x2="1118.815" y2="453.734" style="stroke:#000;stroke-width:1.5;"/><rect x="1118.815" y="436.75" width="177.799" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1128.815" y="457.889" fill="#000" font-size="12" textLength="157.799">3.2.1. Filtrar por categoria</text><line x1="1108.815" y1="502.703" x2="1118.815" y2="502.703" style="stroke:#000;stroke-width:1.5;"/><rect x="1118.815" y="485.719" width="173.193" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1128.815" y="506.857" fill="#000" font-size="12" textLength="153.193">3.2.2. Ver disponibilidade</text><line x1="1108.815" y1="551.672" x2="1118.815" y2="551.672" style="stroke:#000;stroke-width:1.5;"/><rect x="1118.815" y="534.688" width="236.328" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1128.815" y="555.826" fill="#000" font-size="12" textLength="216.328">3.2.3. Checar previsão de reposição</text><line x1="1108.815" y1="421.75" x2="1108.815" y2="551.672" style="stroke:#000;stroke-width:1.5;"/><line x1="1020.554" y1="600.641" x2="1030.554" y2="600.641" style="stroke:#000;stroke-width:1.5;"/><rect x="1030.554" y="583.656" width="138.494" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1040.554" y="604.795" fill="#000" font-size="12" textLength="118.494">3.3. Gerar Relatório</text><line x1="1099.801" y1="649.609" x2="1109.801" y2="649.609" style="stroke:#000;stroke-width:1.5;"/><rect x="1109.801" y="632.625" width="170.428" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1119.801" y="653.764" fill="#000" font-size="12" textLength="150.428">3.3.1. Selecionar período</text><line x1="1099.801" y1="698.578" x2="1109.801" y2="698.578" style="stroke:#000;stroke-width:1.5;"/><rect x="1109.801" y="681.594" width="165.254" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1119.801" y="702.732" fill="#000" font-size="12" textLength="145.254">3.3.2. Escolher métricas</text><line x1="1099.801" y1="747.547" x2="1109.801" y2="747.547" style="stroke:#000;stroke-width:1.5;"/><rect x="1109.801" y="730.563" width="182.328" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1119.801" y="751.701" fill="#000" font-size="12" textLength="162.328">3.3.3. Exportar (PDF/Excel)</text><line x1="1099.801" y1="617.625" x2="1099.801" y2="747.547" style="stroke:#000;stroke-width:1.5;"/><line x1="1020.554" y1="127.938" x2="1020.554" y2="600.641" style="stroke:#000;stroke-width:1.5;"/><line x1="1485.778" y1="73.969" x2="1485.778" y2="93.969" style="stroke:#000;stroke-width:1.5;"/><rect x="1386.769" y="93.969" width="198.02" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1396.769" y="115.107" fill="#000" font-size="12" textLength="178.02">4. Identificação de Problemas</text><line x1="1485.778" y1="159.922" x2="1495.778" y2="159.922" style="stroke:#000;stroke-width:1.5;"/><rect x="1495.778" y="142.938" width="232.795" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1505.778" y="164.076" fill="#000" font-size="12" textLength="212.795">4.1. Lentidão na busca de produtos</text><line x1="1485.778" y1="208.891" x2="1495.778" y2="208.891" style="stroke:#000;stroke-width:1.5;"/><rect x="1495.778" y="191.906" width="249.049" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1505.778" y="213.045" fill="#000" font-size="12" textLength="229.049">4.2. Dados de estoque desatualizados</text><line x1="1485.778" y1="257.859" x2="1495.778" y2="257.859" style="stroke:#000;stroke-width:1.5;"/><rect x="1495.778" y="240.875" width="243.031" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1505.778" y="262.014" fill="#000" font-size="12" textLength="223.031">4.3. Interface confusa para relatórios</text><line x1="1485.778" y1="127.938" x2="1485.778" y2="257.859" style="stroke:#000;stroke-width:1.5;"/><line x1="1849.109" y1="73.969" x2="1849.109" y2="93.969" style="stroke:#000;stroke-width:1.5;"/><rect x="1764.827" y="93.969" width="168.564" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1774.827" y="115.107" fill="#000" font-size="12" textLength="148.564">5. Proposta de Melhorias</text><line x1="1849.109" y1="159.922" x2="1859.109" y2="159.922" style="stroke:#000;stroke-width:1.5;"/><rect x="1859.109" y="142.938" width="208.643" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1869.109" y="164.076" fill="#000" font-size="12" textLength="188.643">5.1. Otimizar fluxo de checkout</text><line x1="1849.109" y1="208.891" x2="1859.109" y2="208.891" style="stroke:#000;stroke-width:1.5;"/><rect x="1859.109" y="191.906" width="256.631" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1869.109" y="213.045" fill="#000" font-size="12" textLength="236.631">5.2. Melhorar sincronização de estoque</text><line x1="1849.109" y1="257.859" x2="1859.109" y2="257.859" style="stroke:#000;stroke-width:1.5;"/><rect x="1859.109" y="240.875" width="255.441" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1869.109" y="262.014" fill="#000" font-size="12" textLength="235.441">5.3. Redesenhar interface de relatórios</text><line x1="1849.109" y1="127.938" x2="1849.109" y2="257.859" style="stroke:#000;stroke-width:1.5;"/><line x1="2223.154" y1="73.969" x2="2223.154" y2="93.969" style="stroke:#000;stroke-width:1.5;"/><rect x="2135.74" y="93.969" width="174.828" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="2145.74" y="115.107" fill="#000" font-size="12" textLength="154.828">6. Validação e Priorização</text><line x1="2223.154" y1="159.922" x2="2233.154" y2="159.922" style="stroke:#000;stroke-width:1.5;"/><rect x="2233.154" y="142.938" width="269.293" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="2243.154" y="164.076" fill="#000" font-size="12" textLength="249.293">6.1. Apresentar insights aos stakeholders</text><line x1="2223.154" y1="208.891" x2="2233.154" y2="208.891" style="stroke:#000;stroke-width:1.5;"/><rect x="2233.154" y="191.906" width="159.453" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="2243.154" y="213.045" fill="#000" font-size="12" textLength="139.453">6.2. Priorizar melhorias</text><line x1="2223.154" y1="257.859" x2="2233.154" y2="257.859" style="stroke:#000;stroke-width:1.5;"/><rect x="2233.154" y="240.875" width="154.109" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="2243.154" y="262.014" fill="#000" font-size="12" textLength="134.109">6.3. Ajustar protótipos</text><line x1="2223.154" y1="127.938" x2="2223.154" y2="257.859" style="stroke:#000;stroke-width:1.5;"/><line x1="105.41" y1="73.969" x2="2223.154" y2="73.969" style="stroke:#000;stroke-width:1.5;"/><rect x="998.956" y="20" width="330.652" height="33.969" fill="#F1F1F1" style="stroke:#181818;stroke-width:1.5;"/><text x="1008.956" y="41.139" fill="#000" font-size="12" textLength="310.652">Análise de Tarefas - Aplicativo Web de E-commerce</text><line x1="1164.282" y1="53.969" x2="1164.282" y2="73.969" style="stroke:#000;stroke-width:1.5;"/><?plantuml-src LLJDJXin6BpdAIpr0gYaa41w9K1I8HL1QKNFtlMNh8dNNlmJ8ju6zL3rq5CV8I_M-RoR7t9QPSQpyyryteiGfOylHUY5XRQDzB8MjREkhBohIKIVQ0y9bLJkHTkvc4aJzf6nz-xboXddnOUJ_Di3BsMvc7kNhEeOq_phzOx4sAxVZ0ua58aVqjDC1d4inetHfOnwwSHFAXYR79UkhicNr3iw4gTzSKqpRVNwz_gNO_okU2Bc1y2CWt6Zo4OzWv0NiPCk_Vfln3z1A1T42cdzvlNsqA0lRcL3u3VEHX0Wh5WX6IKLTQnXNpnAenLedfwJ3ZfJdR0EVcNJi4D8OLQAaZMkaLhxZW4RczZeQQcHF0ovUcT373oILQISf_1HV26F0VZfokZyTDXfGFok2EINifs_X5jQnIHDHu35Rub2rCvsoiuQRQc3p_hlSZTkdlq7MA9Q2jafYU4-3sOt1TrxRKlTIDqEDUIX7cYEunwXt9FIoZ7IGW0lK-0ModQE7OH1nagNi0bKHx9XX_7BynfuU0myeXC7C6Aff13oM8SxDaQQQejQNi5V8aNPMSj5s90CLa1CGdJFQMiWjp7L9jjki9ZOEPexh-MEWVEF10iwO2TqeRbujQS0crSLiSicbzhjewV6XNOzEoCWeb7m7iZ8kFu7_nkL7E1tCjGbqH3MrAaz72ucoC1Ki5Al_qJFExo3eJrPOG2UyU3-UlffiYh9S3pYRFyYRA_BlNU5GTTjWMVy_gzCKenRAGekZ8cDTof5j-71HrvcXgWDazl96uFerPO8HpUesizaIRoVinIauAy1ajcCprnntcSp2AkzAhTaAYwWrJbdOtTHrxdMcKchxBv4u0kNOiVXQvkFWHEmcHv5lUvcfLtf80zvLM6PRCKxj_MOEtldRBIvvwqIXwPXhLFESYFsDqRna8jPBkXv5OEGY0WJBQXoHf4F7NlGtugWntUZZlB2FoN-7dFgC18rOkbTO9dv-zp3TJaPZFgV2tnLJa__0m00?></g></svg></div></div>
+
+<h3 id="visualizacao-do-diagrama"><strong>Visualização do Diagrama:</strong><a class="headerlink" href="#visualizacao-do-diagrama" title="Permanent link">&para;</a></h3>
+<p>O diagrama organiza as tarefas em uma estrutura hierárquica, mostrando:</p>
+<ol>
+<li><strong>Objetivos</strong> da análise.</li>
+<li><strong>Métodos de coleta de dados</strong>.</li>
+<li><strong>Tarefas principais</strong> com subtarefas detalhadas.</li>
+<li><strong>Problemas identificados</strong>.</li>
+<li><strong>Propostas de melhorias</strong>.</li>
+<li><strong>Validação final</strong> com stakeholders.</li>
+</ol>
+<h3 id="como-usar"><strong>Como Usar:</strong><a class="headerlink" href="#como-usar" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Copie o código e cole em um editor PlantUML (como <a href="https://www.planttext.com/">PlantText</a> ou integrado a ferramentas como VS Code).</li>
+<li>O diagrama será gerado automaticamente.</li>
+</ul>
+<hr />
+<p>Aqui está um protótipo de <strong>fluxo de tarefas em formato wireframe</strong> usando <strong>PlantUML Salt</strong>, simulando telas básicas do aplicativo web de e-commerce:</p>
+<div class='puml-container'><div class="puml light" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" data-diagram-type="SALT" style="width:361px;height:652px;background:#FFFFFF;" width="361px" height="652px" viewBox="0 0 361 652" zoomAndPan="magnify" preserveAspectRatio="xMidYMid meet" contentStyleType="text/css" class="diagram"><?plantuml 1.2026.7beta11?><defs/><g font-family="sans-serif" lengthAdjust="spacing"><text x="6" y="17.139" fill="#000" font-size="12" textLength="277.588">Aplicativo Web - Fluxo de Tarefas (Wireframe)</text><text x="13.629" y="49.076" fill="#000" font-size="12" textLength="132.451" font-style="italic">Tela: Registrar Pedido</text><text x="7" y="82.014" fill="#000" font-size="12" textLength="113.543" font-weight="700">Registrar Pedido</text><text x="7" y="113.951" fill="#000" font-size="12" textLength="85.131">Buscar cliente</text><text x="140.824" y="113.951" fill="#000" font-size="12" textLength="34.91">input:</text><text x="175.734" y="113.951" fill="#000" font-size="12" text-decoration="underline">_</text><text x="181.734" y="113.951" fill="#000" font-size="12" text-decoration="underline">_</text><text x="187.734" y="113.951" fill="#000" font-size="12" textLength="17.016">_ 🔍</text><text x="7" y="129.92" fill="#000" font-size="12" textLength="108.416">Lista de produtos:</text><text x="27" y="145.889" fill="#000" font-size="12" textLength="108.422">Produto A  $10.00</text><ellipse cx="14" cy="141.734" rx="5" ry="5" fill="none" style="stroke:#000;stroke-width:1.5;"/><text x="27" y="161.857" fill="#000" font-size="12" textLength="108.445">Produto B  $15.00</text><ellipse cx="14" cy="157.703" rx="5" ry="5" fill="none" style="stroke:#000;stroke-width:1.5;"/><text x="7" y="177.826" fill="#000" font-size="12" textLength="131.824">(✔) Produto C  $20.00</text><text x="7" y="193.795" fill="#000" font-size="12" textLength="85.09">Desconto (%):</text><text x="140.824" y="193.795" fill="#000" font-size="12" textLength="141.762">input:___5%     [Aplicar]</text><text x="7" y="209.764" fill="#000" font-size="12" textLength="79.91">Total: $35.00</text><rect x="143.324" y="201.125" width="124" height="17.969" fill="#EEE" style="stroke:#000;stroke-width:2.5;" rx="5" ry="5"/><text x="159.108" y="214.264" fill="#000" font-size="12" textLength="92.432">Finalizar Venda</text><line x1="6" y1="69.875" x2="139.824" y2="69.875" style="stroke:#000;stroke-width:1;"/><line x1="139.824" y1="69.875" x2="283.586" y2="69.875" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="222.594" x2="139.824" y2="222.594" style="stroke:#000;stroke-width:1;"/><line x1="139.824" y1="222.594" x2="283.586" y2="222.594" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="69.875" x2="6" y2="85.844" style="stroke:#000;stroke-width:1;"/><line x1="283.586" y1="101.813" x2="283.586" y2="117.781" style="stroke:#000;stroke-width:1;"/><line x1="283.586" y1="69.875" x2="283.586" y2="85.844" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="181.656" x2="6" y2="197.625" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="149.719" x2="6" y2="165.688" style="stroke:#000;stroke-width:1;"/><line x1="283.586" y1="181.656" x2="283.586" y2="197.625" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="117.781" x2="6" y2="133.75" style="stroke:#000;stroke-width:1;"/><line x1="283.586" y1="149.719" x2="283.586" y2="165.688" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="85.844" x2="6" y2="101.813" style="stroke:#000;stroke-width:1;"/><line x1="283.586" y1="117.781" x2="283.586" y2="133.75" style="stroke:#000;stroke-width:1;"/><line x1="283.586" y1="85.844" x2="283.586" y2="101.813" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="197.625" x2="6" y2="222.594" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="165.688" x2="6" y2="181.656" style="stroke:#000;stroke-width:1;"/><line x1="283.586" y1="197.625" x2="283.586" y2="222.594" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="133.75" x2="6" y2="149.719" style="stroke:#000;stroke-width:1;"/><line x1="283.586" y1="165.688" x2="283.586" y2="181.656" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="101.813" x2="6" y2="117.781" style="stroke:#000;stroke-width:1;"/><line x1="283.586" y1="133.75" x2="283.586" y2="149.719" style="stroke:#000;stroke-width:1;"/><text x="13.629" y="251.701" fill="#000" font-size="12" textLength="143.068" font-style="italic">Tela: Consultar Estoque</text><text x="7" y="284.639" fill="#000" font-size="12" textLength="123.914" font-weight="700">Consultar Estoque</text><text x="7" y="316.576" fill="#000" font-size="12" textLength="63.246">Filtrar por:</text><text x="154" y="316.576" fill="#000" font-size="12" textLength="139.189">dropdown: Categoria ▼</text><text x="7" y="332.545" fill="#000" font-size="12" textLength="104.391">Itens no estoque:</text><text x="8" y="365.482" fill="#000" font-size="12" textLength="46.781">Produto</text><text x="56.781" y="365.482" fill="#000" font-size="12" textLength="21.768">Qtd</text><text x="81.686" y="365.482" fill="#000" font-size="12" textLength="61.559">Reposição</text><text x="8" y="381.451" fill="#000" font-size="12">A</text><text x="56.781" y="381.451" fill="#000" font-size="12" textLength="15.27">50</text><text x="81.686" y="381.451" fill="#000" font-size="12" textLength="34.582">05/04</text><text x="8" y="397.42" fill="#000" font-size="12">B</text><text x="56.781" y="397.42" fill="#000" font-size="12">0</text><text x="81.686" y="397.42" fill="#000" font-size="12" textLength="34.582">10/04</text><text x="8" y="413.389" fill="#000" font-size="12">C</text><text x="56.781" y="413.389" fill="#000" font-size="12" textLength="22.904">120</text><text x="81.686" y="413.389" fill="#000" font-size="12" textLength="19.6">-10</text><line x1="7" y1="353.344" x2="55.781" y2="353.344" style="stroke:#000;stroke-width:1;"/><line x1="80.686" y1="385.281" x2="144.244" y2="385.281" style="stroke:#000;stroke-width:1;"/><line x1="55.781" y1="353.344" x2="80.686" y2="353.344" style="stroke:#000;stroke-width:1;"/><line x1="80.686" y1="353.344" x2="144.244" y2="353.344" style="stroke:#000;stroke-width:1;"/><line x1="7" y1="401.25" x2="55.781" y2="401.25" style="stroke:#000;stroke-width:1;"/><line x1="55.781" y1="401.25" x2="80.686" y2="401.25" style="stroke:#000;stroke-width:1;"/><line x1="7" y1="369.313" x2="55.781" y2="369.313" style="stroke:#000;stroke-width:1;"/><line x1="80.686" y1="401.25" x2="144.244" y2="401.25" style="stroke:#000;stroke-width:1;"/><line x1="55.781" y1="369.313" x2="80.686" y2="369.313" style="stroke:#000;stroke-width:1;"/><line x1="80.686" y1="369.313" x2="144.244" y2="369.313" style="stroke:#000;stroke-width:1;"/><line x1="7" y1="417.219" x2="55.781" y2="417.219" style="stroke:#000;stroke-width:1;"/><line x1="55.781" y1="417.219" x2="80.686" y2="417.219" style="stroke:#000;stroke-width:1;"/><line x1="80.686" y1="417.219" x2="144.244" y2="417.219" style="stroke:#000;stroke-width:1;"/><line x1="7" y1="385.281" x2="55.781" y2="385.281" style="stroke:#000;stroke-width:1;"/><line x1="55.781" y1="385.281" x2="80.686" y2="385.281" style="stroke:#000;stroke-width:1;"/><line x1="7" y1="353.344" x2="7" y2="369.313" style="stroke:#000;stroke-width:1;"/><line x1="80.686" y1="385.281" x2="80.686" y2="401.25" style="stroke:#000;stroke-width:1;"/><line x1="144.244" y1="385.281" x2="144.244" y2="401.25" style="stroke:#000;stroke-width:1;"/><line x1="55.781" y1="353.344" x2="55.781" y2="369.313" style="stroke:#000;stroke-width:1;"/><line x1="80.686" y1="353.344" x2="80.686" y2="369.313" style="stroke:#000;stroke-width:1;"/><line x1="144.244" y1="353.344" x2="144.244" y2="369.313" style="stroke:#000;stroke-width:1;"/><line x1="7" y1="401.25" x2="7" y2="417.219" style="stroke:#000;stroke-width:1;"/><line x1="55.781" y1="401.25" x2="55.781" y2="417.219" style="stroke:#000;stroke-width:1;"/><line x1="7" y1="369.313" x2="7" y2="385.281" style="stroke:#000;stroke-width:1;"/><line x1="80.686" y1="401.25" x2="80.686" y2="417.219" style="stroke:#000;stroke-width:1;"/><line x1="144.244" y1="401.25" x2="144.244" y2="417.219" style="stroke:#000;stroke-width:1;"/><line x1="55.781" y1="369.313" x2="55.781" y2="385.281" style="stroke:#000;stroke-width:1;"/><line x1="80.686" y1="369.313" x2="80.686" y2="385.281" style="stroke:#000;stroke-width:1;"/><line x1="144.244" y1="369.313" x2="144.244" y2="385.281" style="stroke:#000;stroke-width:1;"/><line x1="7" y1="385.281" x2="7" y2="401.25" style="stroke:#000;stroke-width:1;"/><line x1="55.781" y1="385.281" x2="55.781" y2="401.25" style="stroke:#000;stroke-width:1;"/><rect x="9.5" y="421.719" width="140" height="17.969" fill="#EEE" style="stroke:#000;stroke-width:2.5;" rx="5" ry="5"/><text x="26.786" y="434.857" fill="#000" font-size="12" textLength="105.428">Atualizar Estoque</text><line x1="6" y1="272.5" x2="153" y2="272.5" style="stroke:#000;stroke-width:1;"/><line x1="153" y1="272.5" x2="294.189" y2="272.5" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="443.188" x2="153" y2="443.188" style="stroke:#000;stroke-width:1;"/><line x1="153" y1="443.188" x2="294.189" y2="443.188" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="272.5" x2="6" y2="288.469" style="stroke:#000;stroke-width:1;"/><line x1="294.189" y1="304.438" x2="294.189" y2="320.406" style="stroke:#000;stroke-width:1;"/><line x1="294.189" y1="272.5" x2="294.189" y2="288.469" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="352.344" x2="6" y2="418.219" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="320.406" x2="6" y2="336.375" style="stroke:#000;stroke-width:1;"/><line x1="294.189" y1="352.344" x2="294.189" y2="418.219" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="288.469" x2="6" y2="304.438" style="stroke:#000;stroke-width:1;"/><line x1="294.189" y1="320.406" x2="294.189" y2="336.375" style="stroke:#000;stroke-width:1;"/><line x1="294.189" y1="288.469" x2="294.189" y2="304.438" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="418.219" x2="6" y2="443.188" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="336.375" x2="6" y2="352.344" style="stroke:#000;stroke-width:1;"/><line x1="294.189" y1="418.219" x2="294.189" y2="443.188" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="304.438" x2="6" y2="320.406" style="stroke:#000;stroke-width:1;"/><line x1="294.189" y1="336.375" x2="294.189" y2="352.344" style="stroke:#000;stroke-width:1;"/><text x="6" y="472.295" fill="#000" font-size="12" font-style="italic"> </text><text x="9.814" y="472.295" fill="#000" font-size="12" textLength="141.457" font-weight="700" font-style="italic">Tela: Gerar Relatório</text><text x="7" y="505.232" fill="#000" font-size="12" textLength="103.945" font-weight="700">Gerar Relatório</text><text x="7" y="537.17" fill="#000" font-size="12" textLength="49.23">Período:</text><text x="175.775" y="537.17" fill="#000" font-size="12" textLength="177.68">01/03/2024 ▾ to 31/03/2024 ▾</text><text x="7" y="553.139" fill="#000" font-size="12" textLength="54.955">Métricas:</text><text x="7" y="569.107" fill="#000" font-size="12" textLength="113.479">(✔) Vendas por dia</text><text x="7" y="585.076" fill="#000" font-size="12" textLength="166.775">(✔) Produtos mais vendidos</text><text x="27" y="601.045" fill="#000" font-size="12" textLength="77.479">Ticket médio</text><ellipse cx="14" cy="596.891" rx="5" ry="5" fill="none" style="stroke:#000;stroke-width:1.5;"/><text x="7" y="617.014" fill="#000" font-size="12" textLength="58.992">[Formato:</text><text x="175.775" y="617.014" fill="#000" font-size="12" textLength="107.045">(✔) PDF   ( ) Excel</text><rect x="9.5" y="624.344" width="124" height="17.969" fill="#EEE" style="stroke:#000;stroke-width:2.5;" rx="5" ry="5"/><text x="25.609" y="637.482" fill="#000" font-size="12" textLength="91.781">Gerar Relatório</text><line x1="6" y1="493.094" x2="174.775" y2="493.094" style="stroke:#000;stroke-width:1;"/><line x1="174.775" y1="493.094" x2="354.455" y2="493.094" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="645.813" x2="174.775" y2="645.813" style="stroke:#000;stroke-width:1;"/><line x1="174.775" y1="645.813" x2="354.455" y2="645.813" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="493.094" x2="6" y2="509.063" style="stroke:#000;stroke-width:1;"/><line x1="354.455" y1="525.031" x2="354.455" y2="541" style="stroke:#000;stroke-width:1;"/><line x1="354.455" y1="493.094" x2="354.455" y2="509.063" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="604.875" x2="6" y2="620.844" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="572.938" x2="6" y2="588.906" style="stroke:#000;stroke-width:1;"/><line x1="354.455" y1="604.875" x2="354.455" y2="620.844" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="541" x2="6" y2="556.969" style="stroke:#000;stroke-width:1;"/><line x1="354.455" y1="572.938" x2="354.455" y2="588.906" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="509.063" x2="6" y2="525.031" style="stroke:#000;stroke-width:1;"/><line x1="354.455" y1="541" x2="354.455" y2="556.969" style="stroke:#000;stroke-width:1;"/><line x1="354.455" y1="509.063" x2="354.455" y2="525.031" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="620.844" x2="6" y2="645.813" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="588.906" x2="6" y2="604.875" style="stroke:#000;stroke-width:1;"/><line x1="354.455" y1="620.844" x2="354.455" y2="645.813" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="556.969" x2="6" y2="572.938" style="stroke:#000;stroke-width:1;"/><line x1="354.455" y1="588.906" x2="354.455" y2="604.875" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="525.031" x2="6" y2="541" style="stroke:#000;stroke-width:1;"/><line x1="354.455" y1="556.969" x2="354.455" y2="572.938" style="stroke:#000;stroke-width:1;"/><?plantuml-src PLF1Qjj04BthAmQQW4s8lBBZ5aGfiPsu55fmZMaEffIrTXgMobfrTvM6Elw4ta9FWHvwA3dqr6lfHN-IB-WdT7ObsOqZLilotflHpDlHiR5SMyDJ6wnWaASouLPUA3Z31Hp2E2qk5GY46TVudXjedKawQBx4TW0Gqjlf0CmmvJ5CyLmQgxc62GefbEEyQ7K0JnVFTkawVbYOXB0abPXP17gkG6PvOUDtsmV-Vhl-Gc9QBoa9ToNbMed2AXDxc5OBsZ2fG1W0x4KiP6m77pgyJxWFkBkvtb8Zehfr2AqJD8dA26_jjsE0dSBw-nwPLuxfjnGmKvQdCUprVFfAFn_BZAVoCpNu1ZF1dIvO1_Tz6wdC52bT0vmQgpuMw8qB6jyUq87B7VfzB5FlQAvqJ9yJMkL2VSee9xTuhhJaSFVrjvU-i9WPo1HWbIN-BytgKT1qsBXn1Q-je7sAkJAo_55-Lx0H3UZjCzfOlyEEjlWGcXFpUyI8th2Z3HjrNV1XnAhGTL1vQOlQgxfHvzPwEsRaHMNOStGzJ-biorzQgcREg17ls2vVaxGcgCkVIYXd5eiwhDVfikuHUVG7gEVUFOJahyfRg-b-JRoP5d-DnXaEWjnzC4O6bbmQk20PpRXfvd8camzeOLdU2geNVDnyhFIIMrzCdUDa39N-z3B1r8jsc_6ck24wfa_u_pQ8GghvSVXaWPP7qJy0?></g></svg></div><div class="puml dark" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" data-diagram-type="SALT" style="width:361px;height:652px;background:#FFFFFF;" width="361px" height="652px" viewBox="0 0 361 652" zoomAndPan="magnify" preserveAspectRatio="xMidYMid meet" contentStyleType="text/css" class="diagram"><?plantuml 1.2026.7beta11?><defs/><g font-family="sans-serif" lengthAdjust="spacing"><text x="6" y="17.139" fill="#000" font-size="12" textLength="277.588">Aplicativo Web - Fluxo de Tarefas (Wireframe)</text><text x="13.629" y="49.076" fill="#000" font-size="12" textLength="132.451" font-style="italic">Tela: Registrar Pedido</text><text x="7" y="82.014" fill="#000" font-size="12" textLength="113.543" font-weight="700">Registrar Pedido</text><text x="7" y="113.951" fill="#000" font-size="12" textLength="85.131">Buscar cliente</text><text x="140.824" y="113.951" fill="#000" font-size="12" textLength="34.91">input:</text><text x="175.734" y="113.951" fill="#000" font-size="12" text-decoration="underline">_</text><text x="181.734" y="113.951" fill="#000" font-size="12" text-decoration="underline">_</text><text x="187.734" y="113.951" fill="#000" font-size="12" textLength="17.016">_ 🔍</text><text x="7" y="129.92" fill="#000" font-size="12" textLength="108.416">Lista de produtos:</text><text x="27" y="145.889" fill="#000" font-size="12" textLength="108.422">Produto A  $10.00</text><ellipse cx="14" cy="141.734" rx="5" ry="5" fill="none" style="stroke:#000;stroke-width:1.5;"/><text x="27" y="161.857" fill="#000" font-size="12" textLength="108.445">Produto B  $15.00</text><ellipse cx="14" cy="157.703" rx="5" ry="5" fill="none" style="stroke:#000;stroke-width:1.5;"/><text x="7" y="177.826" fill="#000" font-size="12" textLength="131.824">(✔) Produto C  $20.00</text><text x="7" y="193.795" fill="#000" font-size="12" textLength="85.09">Desconto (%):</text><text x="140.824" y="193.795" fill="#000" font-size="12" textLength="141.762">input:___5%     [Aplicar]</text><text x="7" y="209.764" fill="#000" font-size="12" textLength="79.91">Total: $35.00</text><rect x="143.324" y="201.125" width="124" height="17.969" fill="#EEE" style="stroke:#000;stroke-width:2.5;" rx="5" ry="5"/><text x="159.108" y="214.264" fill="#000" font-size="12" textLength="92.432">Finalizar Venda</text><line x1="6" y1="69.875" x2="139.824" y2="69.875" style="stroke:#000;stroke-width:1;"/><line x1="139.824" y1="69.875" x2="283.586" y2="69.875" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="222.594" x2="139.824" y2="222.594" style="stroke:#000;stroke-width:1;"/><line x1="139.824" y1="222.594" x2="283.586" y2="222.594" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="69.875" x2="6" y2="85.844" style="stroke:#000;stroke-width:1;"/><line x1="283.586" y1="101.813" x2="283.586" y2="117.781" style="stroke:#000;stroke-width:1;"/><line x1="283.586" y1="69.875" x2="283.586" y2="85.844" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="181.656" x2="6" y2="197.625" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="149.719" x2="6" y2="165.688" style="stroke:#000;stroke-width:1;"/><line x1="283.586" y1="181.656" x2="283.586" y2="197.625" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="117.781" x2="6" y2="133.75" style="stroke:#000;stroke-width:1;"/><line x1="283.586" y1="149.719" x2="283.586" y2="165.688" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="85.844" x2="6" y2="101.813" style="stroke:#000;stroke-width:1;"/><line x1="283.586" y1="117.781" x2="283.586" y2="133.75" style="stroke:#000;stroke-width:1;"/><line x1="283.586" y1="85.844" x2="283.586" y2="101.813" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="197.625" x2="6" y2="222.594" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="165.688" x2="6" y2="181.656" style="stroke:#000;stroke-width:1;"/><line x1="283.586" y1="197.625" x2="283.586" y2="222.594" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="133.75" x2="6" y2="149.719" style="stroke:#000;stroke-width:1;"/><line x1="283.586" y1="165.688" x2="283.586" y2="181.656" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="101.813" x2="6" y2="117.781" style="stroke:#000;stroke-width:1;"/><line x1="283.586" y1="133.75" x2="283.586" y2="149.719" style="stroke:#000;stroke-width:1;"/><text x="13.629" y="251.701" fill="#000" font-size="12" textLength="143.068" font-style="italic">Tela: Consultar Estoque</text><text x="7" y="284.639" fill="#000" font-size="12" textLength="123.914" font-weight="700">Consultar Estoque</text><text x="7" y="316.576" fill="#000" font-size="12" textLength="63.246">Filtrar por:</text><text x="154" y="316.576" fill="#000" font-size="12" textLength="139.189">dropdown: Categoria ▼</text><text x="7" y="332.545" fill="#000" font-size="12" textLength="104.391">Itens no estoque:</text><text x="8" y="365.482" fill="#000" font-size="12" textLength="46.781">Produto</text><text x="56.781" y="365.482" fill="#000" font-size="12" textLength="21.768">Qtd</text><text x="81.686" y="365.482" fill="#000" font-size="12" textLength="61.559">Reposição</text><text x="8" y="381.451" fill="#000" font-size="12">A</text><text x="56.781" y="381.451" fill="#000" font-size="12" textLength="15.27">50</text><text x="81.686" y="381.451" fill="#000" font-size="12" textLength="34.582">05/04</text><text x="8" y="397.42" fill="#000" font-size="12">B</text><text x="56.781" y="397.42" fill="#000" font-size="12">0</text><text x="81.686" y="397.42" fill="#000" font-size="12" textLength="34.582">10/04</text><text x="8" y="413.389" fill="#000" font-size="12">C</text><text x="56.781" y="413.389" fill="#000" font-size="12" textLength="22.904">120</text><text x="81.686" y="413.389" fill="#000" font-size="12" textLength="19.6">-10</text><line x1="7" y1="353.344" x2="55.781" y2="353.344" style="stroke:#000;stroke-width:1;"/><line x1="80.686" y1="385.281" x2="144.244" y2="385.281" style="stroke:#000;stroke-width:1;"/><line x1="55.781" y1="353.344" x2="80.686" y2="353.344" style="stroke:#000;stroke-width:1;"/><line x1="80.686" y1="353.344" x2="144.244" y2="353.344" style="stroke:#000;stroke-width:1;"/><line x1="7" y1="401.25" x2="55.781" y2="401.25" style="stroke:#000;stroke-width:1;"/><line x1="55.781" y1="401.25" x2="80.686" y2="401.25" style="stroke:#000;stroke-width:1;"/><line x1="7" y1="369.313" x2="55.781" y2="369.313" style="stroke:#000;stroke-width:1;"/><line x1="80.686" y1="401.25" x2="144.244" y2="401.25" style="stroke:#000;stroke-width:1;"/><line x1="55.781" y1="369.313" x2="80.686" y2="369.313" style="stroke:#000;stroke-width:1;"/><line x1="80.686" y1="369.313" x2="144.244" y2="369.313" style="stroke:#000;stroke-width:1;"/><line x1="7" y1="417.219" x2="55.781" y2="417.219" style="stroke:#000;stroke-width:1;"/><line x1="55.781" y1="417.219" x2="80.686" y2="417.219" style="stroke:#000;stroke-width:1;"/><line x1="80.686" y1="417.219" x2="144.244" y2="417.219" style="stroke:#000;stroke-width:1;"/><line x1="7" y1="385.281" x2="55.781" y2="385.281" style="stroke:#000;stroke-width:1;"/><line x1="55.781" y1="385.281" x2="80.686" y2="385.281" style="stroke:#000;stroke-width:1;"/><line x1="7" y1="353.344" x2="7" y2="369.313" style="stroke:#000;stroke-width:1;"/><line x1="80.686" y1="385.281" x2="80.686" y2="401.25" style="stroke:#000;stroke-width:1;"/><line x1="144.244" y1="385.281" x2="144.244" y2="401.25" style="stroke:#000;stroke-width:1;"/><line x1="55.781" y1="353.344" x2="55.781" y2="369.313" style="stroke:#000;stroke-width:1;"/><line x1="80.686" y1="353.344" x2="80.686" y2="369.313" style="stroke:#000;stroke-width:1;"/><line x1="144.244" y1="353.344" x2="144.244" y2="369.313" style="stroke:#000;stroke-width:1;"/><line x1="7" y1="401.25" x2="7" y2="417.219" style="stroke:#000;stroke-width:1;"/><line x1="55.781" y1="401.25" x2="55.781" y2="417.219" style="stroke:#000;stroke-width:1;"/><line x1="7" y1="369.313" x2="7" y2="385.281" style="stroke:#000;stroke-width:1;"/><line x1="80.686" y1="401.25" x2="80.686" y2="417.219" style="stroke:#000;stroke-width:1;"/><line x1="144.244" y1="401.25" x2="144.244" y2="417.219" style="stroke:#000;stroke-width:1;"/><line x1="55.781" y1="369.313" x2="55.781" y2="385.281" style="stroke:#000;stroke-width:1;"/><line x1="80.686" y1="369.313" x2="80.686" y2="385.281" style="stroke:#000;stroke-width:1;"/><line x1="144.244" y1="369.313" x2="144.244" y2="385.281" style="stroke:#000;stroke-width:1;"/><line x1="7" y1="385.281" x2="7" y2="401.25" style="stroke:#000;stroke-width:1;"/><line x1="55.781" y1="385.281" x2="55.781" y2="401.25" style="stroke:#000;stroke-width:1;"/><rect x="9.5" y="421.719" width="140" height="17.969" fill="#EEE" style="stroke:#000;stroke-width:2.5;" rx="5" ry="5"/><text x="26.786" y="434.857" fill="#000" font-size="12" textLength="105.428">Atualizar Estoque</text><line x1="6" y1="272.5" x2="153" y2="272.5" style="stroke:#000;stroke-width:1;"/><line x1="153" y1="272.5" x2="294.189" y2="272.5" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="443.188" x2="153" y2="443.188" style="stroke:#000;stroke-width:1;"/><line x1="153" y1="443.188" x2="294.189" y2="443.188" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="272.5" x2="6" y2="288.469" style="stroke:#000;stroke-width:1;"/><line x1="294.189" y1="304.438" x2="294.189" y2="320.406" style="stroke:#000;stroke-width:1;"/><line x1="294.189" y1="272.5" x2="294.189" y2="288.469" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="352.344" x2="6" y2="418.219" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="320.406" x2="6" y2="336.375" style="stroke:#000;stroke-width:1;"/><line x1="294.189" y1="352.344" x2="294.189" y2="418.219" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="288.469" x2="6" y2="304.438" style="stroke:#000;stroke-width:1;"/><line x1="294.189" y1="320.406" x2="294.189" y2="336.375" style="stroke:#000;stroke-width:1;"/><line x1="294.189" y1="288.469" x2="294.189" y2="304.438" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="418.219" x2="6" y2="443.188" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="336.375" x2="6" y2="352.344" style="stroke:#000;stroke-width:1;"/><line x1="294.189" y1="418.219" x2="294.189" y2="443.188" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="304.438" x2="6" y2="320.406" style="stroke:#000;stroke-width:1;"/><line x1="294.189" y1="336.375" x2="294.189" y2="352.344" style="stroke:#000;stroke-width:1;"/><text x="6" y="472.295" fill="#000" font-size="12" font-style="italic"> </text><text x="9.814" y="472.295" fill="#000" font-size="12" textLength="141.457" font-weight="700" font-style="italic">Tela: Gerar Relatório</text><text x="7" y="505.232" fill="#000" font-size="12" textLength="103.945" font-weight="700">Gerar Relatório</text><text x="7" y="537.17" fill="#000" font-size="12" textLength="49.23">Período:</text><text x="175.775" y="537.17" fill="#000" font-size="12" textLength="177.68">01/03/2024 ▾ to 31/03/2024 ▾</text><text x="7" y="553.139" fill="#000" font-size="12" textLength="54.955">Métricas:</text><text x="7" y="569.107" fill="#000" font-size="12" textLength="113.479">(✔) Vendas por dia</text><text x="7" y="585.076" fill="#000" font-size="12" textLength="166.775">(✔) Produtos mais vendidos</text><text x="27" y="601.045" fill="#000" font-size="12" textLength="77.479">Ticket médio</text><ellipse cx="14" cy="596.891" rx="5" ry="5" fill="none" style="stroke:#000;stroke-width:1.5;"/><text x="7" y="617.014" fill="#000" font-size="12" textLength="58.992">[Formato:</text><text x="175.775" y="617.014" fill="#000" font-size="12" textLength="107.045">(✔) PDF   ( ) Excel</text><rect x="9.5" y="624.344" width="124" height="17.969" fill="#EEE" style="stroke:#000;stroke-width:2.5;" rx="5" ry="5"/><text x="25.609" y="637.482" fill="#000" font-size="12" textLength="91.781">Gerar Relatório</text><line x1="6" y1="493.094" x2="174.775" y2="493.094" style="stroke:#000;stroke-width:1;"/><line x1="174.775" y1="493.094" x2="354.455" y2="493.094" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="645.813" x2="174.775" y2="645.813" style="stroke:#000;stroke-width:1;"/><line x1="174.775" y1="645.813" x2="354.455" y2="645.813" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="493.094" x2="6" y2="509.063" style="stroke:#000;stroke-width:1;"/><line x1="354.455" y1="525.031" x2="354.455" y2="541" style="stroke:#000;stroke-width:1;"/><line x1="354.455" y1="493.094" x2="354.455" y2="509.063" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="604.875" x2="6" y2="620.844" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="572.938" x2="6" y2="588.906" style="stroke:#000;stroke-width:1;"/><line x1="354.455" y1="604.875" x2="354.455" y2="620.844" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="541" x2="6" y2="556.969" style="stroke:#000;stroke-width:1;"/><line x1="354.455" y1="572.938" x2="354.455" y2="588.906" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="509.063" x2="6" y2="525.031" style="stroke:#000;stroke-width:1;"/><line x1="354.455" y1="541" x2="354.455" y2="556.969" style="stroke:#000;stroke-width:1;"/><line x1="354.455" y1="509.063" x2="354.455" y2="525.031" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="620.844" x2="6" y2="645.813" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="588.906" x2="6" y2="604.875" style="stroke:#000;stroke-width:1;"/><line x1="354.455" y1="620.844" x2="354.455" y2="645.813" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="556.969" x2="6" y2="572.938" style="stroke:#000;stroke-width:1;"/><line x1="354.455" y1="588.906" x2="354.455" y2="604.875" style="stroke:#000;stroke-width:1;"/><line x1="6" y1="525.031" x2="6" y2="541" style="stroke:#000;stroke-width:1;"/><line x1="354.455" y1="556.969" x2="354.455" y2="572.938" style="stroke:#000;stroke-width:1;"/><?plantuml-src PLF1Qjj04BthAmQQW4s8lBBZ5aGfiPsu55fmZMaEffIrTXgMobfrTvM6Elw4ta9FWHvwA3dqr6lfHN-IB-WdT7ObsOqZLilotflHpDlHiR5SMyDJ6wnWaASouLPUA3Z31Hp2E2qk5GY46TVudXjedKawQBx4TW0Gqjlf0CmmvJ5CyLmQgxc62GefbEEyQ7K0JnVFTkawVbYOXB0abPXP17gkG6PvOUDtsmV-Vhl-Gc9QBoa9ToNbMed2AXDxc5OBsZ2fG1W0x4KiP6m77pgyJxWFkBkvtb8Zehfr2AqJD8dA26_jjsE0dSBw-nwPLuxfjnGmKvQdCUprVFfAFn_BZAVoCpNu1ZF1dIvO1_Tz6wdC52bT0vmQgpuMw8qB6jyUq87B7VfzB5FlQAvqJ9yJMkL2VSee9xTuhhJaSFVrjvU-i9WPo1HWbIN-BytgKT1qsBXn1Q-je7sAkJAo_55-Lx0H3UZjCzfOlyEEjlWGcXFpUyI8th2Z3HjrNV1XnAhGTL1vQOlQgxfHvzPwEsRaHMNOStGzJ-biorzQgcREg17ls2vVaxGcgCkVIYXd5eiwhDVfikuHUVG7gEVUFOJahyfRg-b-JRoP5d-DnXaEWjnzC4O6bbmQk20PpRXfvd8camzeOLdU2geNVDnyhFIIMrzCdUDa39N-z3B1r8jsc_6ck24wfa_u_pQ8GghvSVXaWPP7qJy0?></g></svg></div></div>
+
+<h3 id="caracteristicas-do-prototipo"><strong>Características do Protótipo:</strong><a class="headerlink" href="#caracteristicas-do-prototipo" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Registrar Pedido</strong>:</li>
+<li>Campo de busca com ícone de lupa 🔍</li>
+<li>Lista de produtos selecionáveis (checkboxes)</li>
+<li>Seção para aplicar desconto</li>
+<li>
+<p>Botão de ação principal</p>
+</li>
+<li>
+<p><strong>Consultar Estoque</strong>:</p>
+</li>
+<li>Dropdown para filtro</li>
+<li>Tabela de dados simulada</li>
+<li>
+<p>Botão para atualização manual (problema identificado)</p>
+</li>
+<li>
+<p><strong>Gerar Relatório</strong>:</p>
+</li>
+<li>Seletores de período</li>
+<li>Checkboxes para métricas</li>
+<li>
+<p>Opções de formato de exportação</p>
+</li>
+<li>
+<p><strong>Anotações</strong>:</p>
+</li>
+<li>Destaque dos 3 principais problemas de UX</li>
+</ol>
+<hr />
+<h3 id="como-visualizar"><strong>Como Visualizar:</strong><a class="headerlink" href="#como-visualizar" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Copie o código para qualquer editor PlantUML (como <a href="https://www.planttext.com/">PlantText</a>)</li>
+<li>O resultado será um wireframe estático com:</li>
+<li>Elementos interativos simulados (inputs, dropdowns, checkboxes)</li>
+<li>Organização visual por telas</li>
+<li>Anotações contextuais</li>
+</ol>
+<h3 id="variacoes-possiveis"><strong>Variações Possíveis:</strong><a class="headerlink" href="#variacoes-possiveis" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Para <strong>fluxos navegacionais</strong>, adicione setas entre telas:</li>
+</ul>
+<div class='puml-container'><div class="puml light" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" data-diagram-type="SALT" style="width:262px;height:35px;background:#FFFFFF;" width="262px" height="35px" viewBox="0 0 262 35" zoomAndPan="magnify" preserveAspectRatio="xMidYMid meet" contentStyleType="text/css" class="diagram"><?plantuml 1.2026.7beta11?><defs/><g font-family="sans-serif" lengthAdjust="spacing"><rect x="8.5" y="8.5" width="244" height="17.969" fill="#EEE" style="stroke:#000;stroke-width:2.5;" rx="5" ry="5"/><text x="43.849" y="21.639" fill="#000" font-size="12" textLength="173.303">Tela 1] -&gt; [Tela 2] -&gt; [Tela 3</text><?plantuml-src SoWkIImgAKxCAU5IKAW6OWM5w93Kd4G5mrW5NJiesmY9RHmBL5GBn0wfUIbWVLo6UaO6HcPwvacf9Oc6XW00?></g></svg></div><div class="puml dark" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" data-diagram-type="SALT" style="width:262px;height:35px;background:#FFFFFF;" width="262px" height="35px" viewBox="0 0 262 35" zoomAndPan="magnify" preserveAspectRatio="xMidYMid meet" contentStyleType="text/css" class="diagram"><?plantuml 1.2026.7beta11?><defs/><g font-family="sans-serif" lengthAdjust="spacing"><rect x="8.5" y="8.5" width="244" height="17.969" fill="#EEE" style="stroke:#000;stroke-width:2.5;" rx="5" ry="5"/><text x="43.849" y="21.639" fill="#000" font-size="12" textLength="173.303">Tela 1] -&gt; [Tela 2] -&gt; [Tela 3</text><?plantuml-src SoWkIImgAKxCAU5IKAW6OWM5w93Kd4G5mrW5NJiesmY9RHmBL5GBn0wfUIbWVLo6UaO6HcPwvacf9Oc6XW00?></g></svg></div></div>
+
+<ul>
+<li>Para <strong>detalhar componentes</strong>, use notação <code>+</code>:</li>
+</ul>
+<div class='puml-container'><div class="puml light" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" data-diagram-type="SALT" style="width:199px;height:42px;background:#FFFFFF;" width="199px" height="42px" viewBox="0 0 199 42" zoomAndPan="magnify" preserveAspectRatio="xMidYMid meet" contentStyleType="text/css" class="diagram"><?plantuml 1.2026.7beta11?><defs/><g font-family="sans-serif" lengthAdjust="spacing"><text x="6" y="17.139" fill="#000" font-size="12" textLength="175.787">+ Botão Primário [Confirmar]</text><text x="6" y="33.107" fill="#000" font-size="12" textLength="186.164">+ Botão Secundário [Cancelar]</text><?plantuml-src SoWkIImgAKxCAU5IKAW6OWK5RGMd_9B3Y_CL0eeoSmylBChCLuXspizBoopAJIoAHLKId9fScfS2KvIObvoQ0r5J2yGEgNafO9Ev3FMC38pCzCoJKaiI3Gq1?></g></svg></div><div class="puml dark" style=""><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" data-diagram-type="SALT" style="width:199px;height:42px;background:#FFFFFF;" width="199px" height="42px" viewBox="0 0 199 42" zoomAndPan="magnify" preserveAspectRatio="xMidYMid meet" contentStyleType="text/css" class="diagram"><?plantuml 1.2026.7beta11?><defs/><g font-family="sans-serif" lengthAdjust="spacing"><text x="6" y="17.139" fill="#000" font-size="12" textLength="175.787">+ Botão Primário [Confirmar]</text><text x="6" y="33.107" fill="#000" font-size="12" textLength="186.164">+ Botão Secundário [Cancelar]</text><?plantuml-src SoWkIImgAKxCAU5IKAW6OWK5RGMd_9B3Y_CL0eeoSmylBChCLuXspizBoopAJIoAHLKId9fScfS2KvIObvoQ0r5J2yGEgNafO9Ev3FMC38pCzCoJKaiI3Gq1?></g></svg></div></div>
+
+<p>Este formato é ideal para <strong>discussões iniciais</strong> com a equipe, permitindo ajustes rápidos antes de protótipos high-fidelity.</p>
+<hr />
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright ©️ 2026, Jonh Carvalho
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.copy", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.path", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../assets/mkdocs_puml/puml.js"></script>
+      
+        <script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
+      
+        <script src="../../../assets/mkdocs_puml/interaction.js"></script>
+      
+    
+  </body>
+</html>
