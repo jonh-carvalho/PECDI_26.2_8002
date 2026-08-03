@@ -6,6 +6,10 @@
   --md-primary-bg-color: #193257;
 }
 
+h1 {
+  display: none;
+}
+
 h1,
 h2,
 h3,
