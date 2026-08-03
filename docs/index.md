@@ -32,7 +32,7 @@ hide:
 
     ---
 
-    xxx, xxx, xxxx, xxxx, x e xxx
+    Caio, Paulo, Marcos e Pedro
 
     [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PECD1_26.2_8002_I)
 
