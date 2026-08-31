@@ -1,0 +1,150 @@
+@startuml
+hide circle
+skinparam linetype ortho
+skinparam classAttributeIconSize 0
+
+entity "usuario" as usuario {
+  *id : UUID <<PK>>
+  --
+  nome : VARCHAR(120)
+  email : VARCHAR(150) <<UNIQUE>>
+  senha_hash : VARCHAR(255)
+  ativo : BOOLEAN
+}
+
+entity "cliente" as cliente {
+  *usuario_id : UUID <<PK, FK>>
+  --
+  cpf : VARCHAR(14) <<UNIQUE>>
+  telefone : VARCHAR(20)
+}
+
+entity "administrador" as administrador {
+  *usuario_id : UUID <<PK, FK>>
+  --
+  matricula : VARCHAR(30) <<UNIQUE>>
+  nivel_acesso : VARCHAR(30)
+}
+
+entity "endereco" as endereco {
+  *id : UUID <<PK>>
+  --
+  cliente_id : UUID <<FK>>
+  logradouro : VARCHAR(120)
+  numero : VARCHAR(20)
+  bairro : VARCHAR(80)
+  cidade : VARCHAR(80)
+  estado : VARCHAR(2)
+  cep : VARCHAR(10)
+}
+
+entity "categoria" as categoria {
+  *id : UUID <<PK>>
+  --
+  nome : VARCHAR(80)
+  descricao : VARCHAR(255)
+}
+
+entity "produto" as produto {
+  *id : UUID <<PK>>
+  --
+  categoria_id : UUID <<FK>>
+  nome : VARCHAR(120)
+  descricao : TEXT
+  preco : DECIMAL(10,2)
+  ativo : BOOLEAN
+}
+
+entity "estoque" as estoque {
+  *id : UUID <<PK>>
+  --
+  produto_id : UUID <<FK, UNIQUE>>
+  quantidade_disponivel : INT
+  quantidade_minima : INT
+}
+
+entity "carrinho" as carrinho {
+  *id : UUID <<PK>>
+  --
+  cliente_id : UUID <<FK, UNIQUE>>
+  criado_em : DATETIME
+}
+
+entity "item_carrinho" as item_carrinho {
+  *id : UUID <<PK>>
+  --
+  carrinho_id : UUID <<FK>>
+  produto_id : UUID <<FK>>
+  quantidade : INT
+  preco_unitario : DECIMAL(10,2)
+}
+
+entity "pedido" as pedido {
+  *id : UUID <<PK>>
+  --
+  cliente_id : UUID <<FK>>
+  endereco_entrega_id : UUID <<FK>>
+  numero : VARCHAR(30) <<UNIQUE>>
+  data_criacao : DATETIME
+  status : VARCHAR(20)
+  valor_total : DECIMAL(10,2)
+}
+
+entity "item_pedido" as item_pedido {
+  *id : UUID <<PK>>
+  --
+  pedido_id : UUID <<FK>>
+  produto_id : UUID <<FK>>
+  quantidade : INT
+  preco_unitario : DECIMAL(10,2)
+}
+
+entity "pagamento" as pagamento {
+  *id : UUID <<PK>>
+  --
+  pedido_id : UUID <<FK, UNIQUE>>
+  metodo : VARCHAR(20)
+  status : VARCHAR(20)
+  valor : DECIMAL(10,2)
+}
+
+entity "envio" as envio {
+  *id : UUID <<PK>>
+  --
+  pedido_id : UUID <<FK, UNIQUE>>
+  codigo_rastreio : VARCHAR(60)
+  frete : DECIMAL(10,2)
+  status : VARCHAR(20)
+  previsao_entrega : DATE
+}
+
+entity "devolucao_troca" as devolucao_troca {
+  *id : UUID <<PK>>
+  --
+  pedido_id : UUID <<FK, UNIQUE>>
+  motivo : VARCHAR(255)
+  status : VARCHAR(20)
+}
+
+usuario ||--|| cliente
+usuario ||--|| administrador
+
+cliente ||--o{ endereco
+cliente ||--|| carrinho
+cliente ||--o{ pedido
+
+categoria ||--o{ produto
+produto ||--|| estoque
+
+carrinho ||--|{ item_carrinho
+produto ||--o{ item_carrinho
+
+pedido ||--|{ item_pedido
+produto ||--o{ item_pedido
+endereco ||--o{ pedido : entrega
+
+pedido ||--|| pagamento
+pedido ||--o| envio
+pedido ||--o| devolucao_troca
+
+@enduml

@@ -1,0 +1,188 @@
+@startuml
+skinparam classAttributeIconSize 0
+hide circle
+
+class Usuario {
+  +id: UUID
+  +nome: String
+  +email: String
+  +senhaHash: String
+  +ativo: Boolean
+  +autenticar(senha: String): Boolean
+}
+
+class Cliente {
+  +cpf: String
+  +telefone: String
+}
+
+class Administrador {
+  +matricula: String
+  +nivelAcesso: String
+}
+
+class Endereco {
+  +id: UUID
+  +logradouro: String
+  +numero: String
+  +bairro: String
+  +cidade: String
+  +estado: String
+  +cep: String
+}
+
+class Categoria {
+  +id: UUID
+  +nome: String
+  +descricao: String
+}
+
+class Produto {
+  +id: UUID
+  +nome: String
+  +descricao: String
+  +preco: Decimal
+  +ativo: Boolean
+}
+
+class Estoque {
+  +id: UUID
+  +quantidadeDisponivel: Integer
+  +quantidadeMinima: Integer
+  +baixar(qtd: Integer)
+  +repor(qtd: Integer)
+}
+
+class Carrinho {
+  +id: UUID
+  +criadoEm: DateTime
+  +valorTotal(): Decimal
+  +adicionarItem(produto: Produto, qtd: Integer)
+  +removerItem(produto: Produto)
+}
+
+class ItemCarrinho {
+  +id: UUID
+  +quantidade: Integer
+  +precoUnitario: Decimal
+  +subtotal(): Decimal
+}
+
+class Pedido {
+  +id: UUID
+  +numero: String
+  +dataCriacao: DateTime
+  +status: StatusPedido
+  +valorTotal: Decimal
+  +confirmar()
+  +cancelar()
+}
+
+class ItemPedido {
+  +id: UUID
+  +quantidade: Integer
+  +precoUnitario: Decimal
+  +subtotal(): Decimal
+}
+
+class Pagamento {
+  +id: UUID
+  +metodo: MetodoPagamento
+  +status: StatusPagamento
+  +valor: Decimal
+  +autorizar(): Boolean
+  +estornar()
+}
+
+class Envio {
+  +id: UUID
+  +codigoRastreio: String
+  +frete: Decimal
+  +status: StatusEnvio
+  +previsaoEntrega: Date
+  +atualizarStatus(status: StatusEnvio)
+}
+
+class DevolucaoTroca {
+  +id: UUID
+  +motivo: String
+  +status: StatusDevolucao
+  +solicitar()
+  +aprovar()
+  +rejeitar()
+}
+
+class GatewayPagamento <<external>> {
+  +processar(pagamento: Pagamento): Boolean
+}
+
+class Transportadora <<external>> {
+  +calcularFrete(cep: String): Decimal
+  +registrarEnvio(pedido: Pedido): String
+}
+
+enum StatusPedido {
+  CRIADO
+  PAGO
+  EM_SEPARACAO
+  ENVIADO
+  ENTREGUE
+  CANCELADO
+}
+
+enum StatusPagamento {
+  PENDENTE
+  APROVADO
+  RECUSADO
+  ESTORNADO
+}
+
+enum StatusEnvio {
+  AGUARDANDO_POSTAGEM
+  EM_TRANSITO
+  ENTREGUE
+  EXTRAVIADO
+}
+
+enum MetodoPagamento {
+  CARTAO
+  PIX
+  BOLETO
+}
+
+enum StatusDevolucao {
+  SOLICITADA
+  APROVADA
+  RECUSADA
+  CONCLUIDA
+}
+
+Usuario <|-- Cliente
+Usuario <|-- Administrador
+
+Cliente "1" o-- "0..*" Endereco
+Cliente "1" o-- "1" Carrinho
+Cliente "1" --> "0..*" Pedido
+
+Categoria "1" <-- "0..*" Produto
+Produto "1" *-- "1" Estoque
+
+Carrinho "1" *-- "1..*" ItemCarrinho
+ItemCarrinho "*" --> "1" Produto
+
+Pedido "1" *-- "1..*" ItemPedido
+ItemPedido "*" --> "1" Produto
+Pedido "1" --> "1" Endereco : entrega
+Pedido "1" *-- "1" Pagamento
+Pedido "1" *-- "0..1" Envio
+Pedido "1" o-- "0..1" DevolucaoTroca
+
+Pagamento ..> GatewayPagamento : integra
+Envio ..> Transportadora : integra
+
+Administrador ..> Produto : gerencia
+Administrador ..> Categoria : gerencia
+Administrador ..> Estoque : gerencia
+Administrador ..> Pedido : gerencia
+
+@enduml

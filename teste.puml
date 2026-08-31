@@ -1,0 +1,60 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Cliente" as Cliente
+actor "Administrador" as Admin
+actor "Gateway de Pagamento" as Pagamento
+actor "Transportadora" as Transportadora
+
+rectangle "Sistema de Comércio Eletrônico" {
+  usecase "Cadastrar conta" as UC_Cadastrar
+  usecase "Autenticar-se" as UC_Login
+  usecase "Gerenciar perfil" as UC_Perfil
+  usecase "Pesquisar produtos" as UC_Pesquisar
+  usecase "Visualizar detalhes do produto" as UC_Detalhes
+  usecase "Adicionar ao carrinho" as UC_AddCarrinho
+  usecase "Gerenciar carrinho" as UC_Carrinho
+  usecase "Finalizar compra" as UC_Checkout
+  usecase "Calcular frete" as UC_Frete
+  usecase "Processar pagamento" as UC_Pagamento
+  usecase "Acompanhar pedido" as UC_Acompanhar
+  usecase "Solicitar devolução/troca" as UC_Devolucao
+
+  usecase "Gerenciar catálogo\n(produtos, categorias, preços)" as UC_Catalogo
+  usecase "Gerenciar estoque" as UC_Estoque
+  usecase "Gerenciar pedidos" as UC_Pedidos
+  usecase "Atualizar status de envio" as UC_Envio
+  usecase "Gerar relatórios" as UC_Relatorios
+}
+
+Cliente --> UC_Cadastrar
+Cliente --> UC_Login
+Cliente --> UC_Perfil
+Cliente --> UC_Pesquisar
+Cliente --> UC_Detalhes
+Cliente --> UC_AddCarrinho
+Cliente --> UC_Carrinho
+Cliente --> UC_Checkout
+Cliente --> UC_Acompanhar
+Cliente --> UC_Devolucao
+
+Admin --> UC_Catalogo
+Admin --> UC_Estoque
+Admin --> UC_Pedidos
+Admin --> UC_Envio
+Admin --> UC_Relatorios
+
+Pagamento --> UC_Pagamento
+Transportadora --> UC_Frete
+Transportadora --> UC_Envio
+
+UC_Detalhes .> UC_Pesquisar : <<extend>>
+UC_Carrinho .> UC_AddCarrinho : <<include>>
+UC_Checkout .> UC_Frete : <<include>>
+UC_Checkout .> UC_Pagamento : <<include>>
+UC_Acompanhar .> UC_Envio : <<include>>
+UC_Pedidos .> UC_Envio : <<include>>
+UC_Pedidos .> UC_Devolucao : <<include>>
+
+@enduml

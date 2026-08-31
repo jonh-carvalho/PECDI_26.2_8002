@@ -1,0 +1,202 @@
+@startuml
+title Casos de Uso Descritivos - Comercio Eletronico
+top to bottom direction
+skinparam shadowing false
+skinparam noteBackgroundColor #FDFDFD
+
+rectangle "UC01 - Cadastrar conta" as UC01
+note right of UC01
+Ator principal: Cliente
+Objetivo: Criar conta de acesso.
+Pre-condicao: Cliente nao autenticado.
+Fluxo principal:
+1. Informa dados cadastrais.
+2. Sistema valida email/CPF.
+3. Sistema cria conta.
+Pos-condicao: Conta ativa criada.
+end note
+
+rectangle "UC02 - Autenticar-se" as UC02
+note right of UC02
+Ator principal: Cliente
+Objetivo: Acessar area autenticada.
+Pre-condicao: Conta existente e ativa.
+Fluxo principal:
+1. Informa email e senha.
+2. Sistema valida credenciais.
+3. Sistema inicia sessao.
+Pos-condicao: Cliente autenticado.
+end note
+
+rectangle "UC03 - Gerenciar perfil" as UC03
+note right of UC03
+Ator principal: Cliente
+Objetivo: Manter dados pessoais e enderecos.
+Pre-condicao: Cliente autenticado.
+Fluxo principal:
+1. Consulta dados atuais.
+2. Altera cadastro/endereco.
+3. Sistema salva alteracoes.
+Pos-condicao: Perfil atualizado.
+end note
+
+rectangle "UC04 - Pesquisar produtos" as UC04
+note right of UC04
+Ator principal: Cliente
+Objetivo: Encontrar produtos no catalogo.
+Fluxo principal:
+1. Informa termo/filtro.
+2. Sistema lista produtos.
+Pos-condicao: Lista exibida.
+end note
+
+rectangle "UC05 - Visualizar detalhes do produto" as UC05
+note right of UC05
+Ator principal: Cliente
+Objetivo: Ver dados completos do produto.
+Pre-condicao: Produto listado.
+Fluxo principal:
+1. Seleciona produto.
+2. Sistema mostra descricao, preco e estoque.
+Pos-condicao: Produto avaliado.
+end note
+
+rectangle "UC06 - Adicionar ao carrinho" as UC06
+note right of UC06
+Ator principal: Cliente
+Objetivo: Incluir item para compra.
+Pre-condicao: Produto disponivel.
+Fluxo principal:
+1. Define quantidade.
+2. Sistema adiciona item.
+3. Sistema recalcula total.
+Pos-condicao: Carrinho atualizado.
+end note
+
+rectangle "UC07 - Gerenciar carrinho" as UC07
+note right of UC07
+Ator principal: Cliente
+Objetivo: Revisar, alterar ou remover itens.
+Pre-condicao: Carrinho existente.
+Fluxo principal:
+1. Visualiza itens.
+2. Altera quantidades/remove item.
+3. Sistema recalcula total.
+Pos-condicao: Carrinho consistente.
+end note
+
+rectangle "UC08 - Finalizar compra" as UC08
+note right of UC08
+Ator principal: Cliente
+Atores secundarios: Gateway de Pagamento, Transportadora
+Objetivo: Gerar pedido confirmado.
+Pre-condicao: Carrinho com itens e cliente autenticado.
+Fluxo principal:
+1. Seleciona endereco de entrega.
+2. Sistema calcula frete.
+3. Cliente escolhe pagamento.
+4. Sistema processa pagamento.
+5. Sistema cria pedido.
+Pos-condicao: Pedido registrado.
+end note
+
+rectangle "UC09 - Calcular frete" as UC09
+note right of UC09
+Ator principal: Transportadora
+Objetivo: Retornar valor e prazo de entrega.
+Pre-condicao: CEP e itens informados.
+Fluxo principal:
+1. Sistema envia dados de entrega.
+2. Transportadora retorna opcoes de frete.
+Pos-condicao: Frete disponivel para checkout.
+end note
+
+rectangle "UC10 - Processar pagamento" as UC10
+note right of UC10
+Ator principal: Gateway de Pagamento
+Objetivo: Autorizar ou recusar pagamento.
+Pre-condicao: Dados de pagamento validos.
+Fluxo principal:
+1. Sistema envia transacao.
+2. Gateway analisa risco e saldo.
+3. Gateway retorna status.
+Pos-condicao: Pagamento aprovado ou recusado.
+end note
+
+rectangle "UC11 - Acompanhar pedido" as UC11
+note right of UC11
+Ator principal: Cliente
+Objetivo: Consultar status da entrega.
+Pre-condicao: Pedido existente.
+Fluxo principal:
+1. Cliente acessa meus pedidos.
+2. Sistema exibe status e rastreio.
+Pos-condicao: Cliente informado.
+end note
+
+rectangle "UC12 - Solicitar devolucao/troca" as UC12
+note right of UC12
+Ator principal: Cliente
+Objetivo: Solicitar reversao da compra.
+Pre-condicao: Pedido entregue dentro do prazo de politica.
+Fluxo principal:
+1. Cliente informa motivo.
+2. Sistema registra solicitacao.
+3. Administrador analisa.
+Pos-condicao: Solicitacao aberta.
+end note
+
+rectangle "UC13 - Gerenciar catalogo" as UC13
+note right of UC13
+Ator principal: Administrador
+Objetivo: Manter produtos, categorias e precos.
+Fluxo principal:
+1. Cadastra/altera/inativa produto.
+2. Vincula categoria.
+3. Atualiza preco.
+Pos-condicao: Catalogo atualizado.
+end note
+
+rectangle "UC14 - Gerenciar estoque" as UC14
+note right of UC14
+Ator principal: Administrador
+Objetivo: Controlar disponibilidade dos produtos.
+Fluxo principal:
+1. Consulta saldo atual.
+2. Registra entradas/ajustes.
+3. Sistema atualiza quantidade.
+Pos-condicao: Estoque atualizado.
+end note
+
+rectangle "UC15 - Gerenciar pedidos e envio" as UC15
+note right of UC15
+Ator principal: Administrador
+Atores secundarios: Transportadora
+Objetivo: Operar ciclo do pedido ate entrega.
+Fluxo principal:
+1. Aprova separacao.
+2. Registra postagem.
+3. Atualiza status de envio.
+4. Trata devolucao/troca quando houver.
+Pos-condicao: Pedido concluido ou devolvido.
+end note
+
+rectangle "UC16 - Gerar relatorios" as UC16
+note right of UC16
+Ator principal: Administrador
+Objetivo: Obter indicadores operacionais e comerciais.
+Fluxo principal:
+1. Define periodo/filtros.
+2. Sistema consolida vendas, pedidos e estoque.
+3. Sistema exibe/exporta relatorio.
+Pos-condicao: Relatorio disponivel.
+end note
+
+UC05 ..> UC04 : <<extend>>
+UC07 ..> UC06 : <<include>>
+UC08 ..> UC09 : <<include>>
+UC08 ..> UC10 : <<include>>
+UC11 ..> UC15 : <<include>>
+UC15 ..> UC12 : <<include>>
+
+@enduml
