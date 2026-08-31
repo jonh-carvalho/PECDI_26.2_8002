@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cenario-i" class="md-skip">
+        <a href="#cenario-do-problema-sistema-de-controle-de-provas" class="md-skip">
           Skip to content
         </a>
       
@@ -737,6 +737,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -779,6 +781,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -787,52 +791,24 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cenario-i" class="md-nav__link">
+  <a href="#contexto" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cenário I
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cenário I">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#o-que-e-aac" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        O que é AAC?
+        Contexto
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#importancia-das-aac" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#problema" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Importância das AAC
+        Problema
       
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#regulamentacao-das-aac" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Regulamentação das AAC
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1295,16 +1271,20 @@
   
 
 
-  <h1>Cenário</h1>
-
-<h2 id="cenario-i">Cenário I<a class="headerlink" href="#cenario-i" title="Permanent link">&para;</a></h2>
-<p>Atividades Acadêmicas Complementares</p>
-<h3 id="o-que-e-aac">O que é AAC?<a class="headerlink" href="#o-que-e-aac" title="Permanent link">&para;</a></h3>
-<p>AAC (Atividades Acadêmicas Complementares) são atividades extracurriculares que complementam a formação acadêmica dos estudantes. Incluem seminários, workshops, projetos de pesquisa, participação em eventos, monitoria e outras atividades que enriquecem o aprendizado além da sala de aula.</p>
-<h3 id="importancia-das-aac">Importância das AAC<a class="headerlink" href="#importancia-das-aac" title="Permanent link">&para;</a></h3>
-<p>As AAC desempenham um papel fundamental na formação integral dos estudantes, proporcionando experiências práticas e oportunidades de desenvolvimento pessoal e profissional além do conteúdo acadêmico tradicional.</p>
-<h3 id="regulamentacao-das-aac">Regulamentação das AAC<a class="headerlink" href="#regulamentacao-das-aac" title="Permanent link">&para;</a></h3>
-<p>A regulamentação das AAC é estabelecida por meio de normas e diretrizes institucionais que definem os critérios de participação, avaliação e reconhecimento das atividades complementares.</p>
+<h1 id="cenario-do-problema-sistema-de-controle-de-provas">Cenário do problema: Sistema de Controle de Provas<a class="headerlink" href="#cenario-do-problema-sistema-de-controle-de-provas" title="Permanent link">&para;</a></h1>
+<h2 id="contexto">Contexto<a class="headerlink" href="#contexto" title="Permanent link">&para;</a></h2>
+<p>Uma instituição de ensino com múltiplos campi realiza, periodicamente, um dia de provas em que todos os cursos aplicam suas avaliações simultaneamente. Cada campus possui sua própria estrutura de salas e oferece um conjunto próprio de cursos, e cada curso possui seus alunos matriculados.</p>
+<p>A aplicação das provas é dividida em três turnos (manhã, tarde e noite) no mesmo dia. Isso ocorre porque os alunos de um mesmo curso podem ter aulas em turnos diferentes ao longo da semana — logo, nem todos estão disponíveis no mesmo horário para fazer a prova. Para resolver isso, a mesma prova (mesmo conteúdo, mesmo curso) é oferecida nos três turnos, e cada aluno participa no turno em que ele efetivamente tem alguma disciplina naquele dia.</p>
+<p>Como a estrutura física (salas) é limitada e compartilhada entre cursos e turnos, é necessário um mecanismo de alocação que distribua os alunos pelas salas disponíveis de forma organizada, respeitando restrições operacionais.</p>
+<h2 id="problema">Problema<a class="headerlink" href="#problema" title="Permanent link">&para;</a></h2>
+<p>Hoje esse processo — organizar alunos por curso, alocar cursos em salas dentro da capacidade física, e coordenar tudo isso por campus e por turno — é feito de forma manual, o que gera risco de:</p>
+<ul>
+<li>Salas alocadas além da capacidade física</li>
+<li>Mistura excessiva de cursos em uma mesma sala, dificultando fiscalização</li>
+<li>Alunos sem sala definida por falta de visão consolidada da ocupação</li>
+<li>Dificuldade de gerar, no dia da prova, uma lista de chamada organizada por sala e por curso</li>
+<li>Falta de controle sobre em qual turno cada aluno está autorizado a comparecer</li>
+</ul>
 
 
 
