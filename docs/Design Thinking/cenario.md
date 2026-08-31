@@ -3,18 +3,22 @@ id: 02_cenario
 title: Cenário I
 ---
 
-## Cenário I
+#Cenário do problema: Sistema de Controle de Provas
 
-Atividades Acadêmicas Complementares
+## Contexto
 
-### O que é AAC?
+Uma instituição de ensino com múltiplos campi realiza, periodicamente, um dia de provas em que todos os cursos aplicam suas avaliações simultaneamente. Cada campus possui sua própria estrutura de salas e oferece um conjunto próprio de cursos, e cada curso possui seus alunos matriculados.
 
-AAC (Atividades Acadêmicas Complementares) são atividades extracurriculares que complementam a formação acadêmica dos estudantes. Incluem seminários, workshops, projetos de pesquisa, participação em eventos, monitoria e outras atividades que enriquecem o aprendizado além da sala de aula.
+A aplicação das provas é dividida em três turnos (manhã, tarde e noite) no mesmo dia. Isso ocorre porque os alunos de um mesmo curso podem ter aulas em turnos diferentes ao longo da semana — logo, nem todos estão disponíveis no mesmo horário para fazer a prova. Para resolver isso, a mesma prova (mesmo conteúdo, mesmo curso) é oferecida nos três turnos, e cada aluno participa no turno em que ele efetivamente tem alguma disciplina naquele dia.
 
-### Importância das AAC
+Como a estrutura física (salas) é limitada e compartilhada entre cursos e turnos, é necessário um mecanismo de alocação que distribua os alunos pelas salas disponíveis de forma organizada, respeitando restrições operacionais.
 
-As AAC desempenham um papel fundamental na formação integral dos estudantes, proporcionando experiências práticas e oportunidades de desenvolvimento pessoal e profissional além do conteúdo acadêmico tradicional.
+## Problema
 
-### Regulamentação das AAC
+Hoje esse processo — organizar alunos por curso, alocar cursos em salas dentro da capacidade física, e coordenar tudo isso por campus e por turno — é feito de forma manual, o que gera risco de:
 
-A regulamentação das AAC é estabelecida por meio de normas e diretrizes institucionais que definem os critérios de participação, avaliação e reconhecimento das atividades complementares.
+- Salas alocadas além da capacidade física
+- Mistura excessiva de cursos em uma mesma sala, dificultando fiscalização
+- Alunos sem sala definida por falta de visão consolidada da ocupação
+- Dificuldade de gerar, no dia da prova, uma lista de chamada organizada por sala e por curso
+- Falta de controle sobre em qual turno cada aluno está autorizado a comparecer
