@@ -3,7 +3,7 @@ id: 02_cenario
 title: Cenário I
 ---
 
-#Cenário do problema: Sistema de Controle de Provas
+# Cenário do problema: Sistema de Controle de Provas
 
 ## Contexto
 
