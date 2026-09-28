@@ -11,28 +11,28 @@
       
       
       
-        <link rel="prev" href="../analise_de_tarefas/">
+        <link rel="prev" href="../04_design_thinking/">
       
       
-        <link rel="next" href="../../Sprint%20Planning/planejamento/">
+        <link rel="next" href="../07_aht/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/ibmec_icon.png">
+      <link rel="icon" href="../../../assets/ibmec_icon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.2">
     
     
       
-        <title>Protótipo - PECD1_26.2_8002</title>
+        <title>Sprint Planning - E-commerce - PECD1_26.2_8002</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,13 +51,13 @@
       
     
     
-      <link rel="stylesheet" href="../../css/extra.css">
+      <link rel="stylesheet" href="../../../css/extra.css">
     
-      <link rel="stylesheet" href="../../assets/mkdocs_puml/puml.css">
+      <link rel="stylesheet" href="../../../assets/mkdocs_puml/puml.css">
     
-      <link rel="stylesheet" href="../../assets/mkdocs_puml/interaction.css">
+      <link rel="stylesheet" href="../../../assets/mkdocs_puml/interaction.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -82,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introducao" class="md-skip">
+        <a href="#07-sprint-planning-aplicativo-web-de-e-commerce" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="PECD1_26.2_8002" class="md-header__button md-logo" aria-label="PECD1_26.2_8002" data-md-component="logo">
+    <a href="../../.." title="PECD1_26.2_8002" class="md-header__button md-logo" aria-label="PECD1_26.2_8002" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236m2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38a2.17 2.17 0 0 0-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44a23.5 23.5 0 0 0-3.107-.534A24 24 0 0 0 12.769 4.7c1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442a23 23 0 0 0-3.113.538 15 15 0 0 1-.254-1.42c-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05q.684.704 1.36 1.564c-.44-.02-.89-.034-1.345-.034q-.691-.001-1.36.034c.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093q.61.874 1.183 1.86.557.961 1.018 1.946c-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87a25.6 25.6 0 0 1-4.412.005 27 27 0 0 1-1.183-1.86q-.557-.961-1.018-1.946a25 25 0 0 1 1.013-1.954c.38-.66.773-1.286 1.18-1.868A25 25 0 0 1 12 8.098zm-3.635.254c-.24.377-.48.763-.704 1.16q-.336.585-.635 1.174c-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0q1.044.153 2.006.387c-.18.632-.405 1.282-.66 1.933a25.952 25.952 0 0 0-1.345-2.32zm3.063.675q.727.226 1.375.498c1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493a24 24 0 0 0-1.1-2.98c.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98a23 23 0 0 0-1.086 2.964c-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474s1.12-1.742 2.852-2.476c.42-.18.88-.342 1.356-.494m11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39a26 26 0 0 0 1.341-2.338zm-9.945.02c.2.392.41.783.64 1.175q.345.586.705 1.143a22 22 0 0 1-2.006-.386c.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295a1.2 1.2 0 0 1-.553-.132c-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64q.661.032 1.345.034.691.001 1.36-.034c-.44.572-.895 1.095-1.345 1.565q-.684-.706-1.36-1.565"/></svg>
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Protótipo
+              Sprint Planning - E-commerce
             
           </span>
         </div>
@@ -244,7 +244,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -261,11 +261,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../Disciplina/aulas/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../aulas/" class="md-tabs__link">
           
   
   
@@ -283,13 +285,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../../Design%20Thinking/" class="md-tabs__link">
           
   
   
@@ -311,7 +311,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../Sprint%20Planning/planejamento/" class="md-tabs__link">
+        <a href="../../../Sprint%20Planning/planejamento/" class="md-tabs__link">
           
   
   
@@ -349,7 +349,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="PECD1_26.2_8002" class="md-nav__button md-logo" aria-label="PECD1_26.2_8002" data-md-component="logo">
+    <a href="../../.." title="PECD1_26.2_8002" class="md-nav__button md-logo" aria-label="PECD1_26.2_8002" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236m2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38a2.17 2.17 0 0 0-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44a23.5 23.5 0 0 0-3.107-.534A24 24 0 0 0 12.769 4.7c1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442a23 23 0 0 0-3.113.538 15 15 0 0 1-.254-1.42c-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05q.684.704 1.36 1.564c-.44-.02-.89-.034-1.345-.034q-.691-.001-1.36.034c.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093q.61.874 1.183 1.86.557.961 1.018 1.946c-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87a25.6 25.6 0 0 1-4.412.005 27 27 0 0 1-1.183-1.86q-.557-.961-1.018-1.946a25 25 0 0 1 1.013-1.954c.38-.66.773-1.286 1.18-1.868A25 25 0 0 1 12 8.098zm-3.635.254c-.24.377-.48.763-.704 1.16q-.336.585-.635 1.174c-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0q1.044.153 2.006.387c-.18.632-.405 1.282-.66 1.933a25.952 25.952 0 0 0-1.345-2.32zm3.063.675q.727.226 1.375.498c1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493a24 24 0 0 0-1.1-2.98c.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98a23 23 0 0 0-1.086 2.964c-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474s1.12-1.742 2.852-2.476c.42-.18.88-.342 1.356-.494m11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39a26 26 0 0 0 1.341-2.338zm-9.945.02c.2.392.41.783.64 1.175q.345.586.705 1.143a22 22 0 0 1-2.006-.386c.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295a1.2 1.2 0 0 1-.553-.132c-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64q.661.032 1.345.034.691.001 1.36-.034c-.44.572-.895 1.095-1.345 1.565q-.684-.706-1.36-1.565"/></svg>
@@ -379,7 +379,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -403,8 +403,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -424,17 +426,20 @@
     
     
       
+        
+        
+      
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -452,7 +457,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -470,7 +475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Disciplina/aulas/" class="md-nav__link">
+      <a href="../../aulas/" class="md-nav__link">
         
   
   
@@ -498,7 +503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Disciplina/ambiente/" class="md-nav__link">
+      <a href="../../ambiente/" class="md-nav__link">
         
   
   
@@ -526,7 +531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Disciplina/github/" class="md-nav__link">
+      <a href="../../github/" class="md-nav__link">
         
   
   
@@ -554,7 +559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Disciplina/mkdocs/" class="md-nav__link">
+      <a href="../../mkdocs/" class="md-nav__link">
         
   
   
@@ -582,7 +587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Disciplina/CodeSpace/" class="md-nav__link">
+      <a href="../../CodeSpace/" class="md-nav__link">
         
   
   
@@ -607,8 +612,10 @@
                 
   
   
+    
   
   
+  
     
     
       
@@ -631,11 +638,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" checked>
         
           
           <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
@@ -656,7 +663,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -674,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Disciplina/Roteiros/04_design_thinking/" class="md-nav__link">
+      <a href="../04_design_thinking/" class="md-nav__link">
         
   
   
@@ -699,10 +706,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Disciplina/Roteiros/07_ecommerce/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 - Sprint Planning E-commerce
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -718,6 +752,170 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivo-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Objetivo do Projeto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organizacao-do-product-backlog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organização do Product Backlog
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Organização do Product Backlog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#priorizacao-inicial-moscow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Priorização inicial (MoSCoW)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sprint-backlog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sprint Backlog
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sprint Backlog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sprint-1-estrutura-e-consulta-de-produtos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sprint 1: Estrutura e consulta de produtos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-2-registro-de-pedido-e-sincronizacao-de-estoque" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sprint 2: Registro de pedido e sincronização de estoque
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-3-gestao-e-acompanhamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sprint 3: Gestão e acompanhamento
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-4-suporte-validacao-e-entrega" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sprint 4: Suporte, validação e entrega
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definicao-de-pronto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Definição de Pronto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dinamica-da-atividade" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dinâmica da Atividade
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist-do-sprint-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Checklist do Sprint Planning
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resultado-esperado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resultado Esperado
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -730,7 +928,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Disciplina/Roteiros/07_aht/" class="md-nav__link">
+      <a href="../07_aht/" class="md-nav__link">
         
   
   
@@ -758,7 +956,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Disciplina/Roteiros/07_receitas/" class="md-nav__link">
+      <a href="../07_receitas/" class="md-nav__link">
         
   
   
@@ -786,7 +984,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Disciplina/Roteiros/07_epics_features_user_stories/" class="md-nav__link">
+      <a href="../07_epics_features_user_stories/" class="md-nav__link">
         
   
   
@@ -814,7 +1012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Disciplina/Roteiros/07_proto/" class="md-nav__link">
+      <a href="../07_proto/" class="md-nav__link">
         
   
   
@@ -854,8 +1052,6 @@
       
   
   
-    
-  
   
   
     
@@ -887,21 +1083,18 @@
     
     
       
-        
-        
-      
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../../Design%20Thinking/" class="md-nav__link ">
               
   
   
@@ -919,13 +1112,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -945,7 +1138,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pesquisa/" class="md-nav__link">
+      <a href="../../../Design%20Thinking/pesquisa/" class="md-nav__link">
         
   
   
@@ -973,7 +1166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../cenario/" class="md-nav__link">
+      <a href="../../../Design%20Thinking/cenario/" class="md-nav__link">
         
   
   
@@ -1001,7 +1194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../5w2h/" class="md-nav__link">
+      <a href="../../../Design%20Thinking/5w2h/" class="md-nav__link">
         
   
   
@@ -1029,7 +1222,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Brainstorm/" class="md-nav__link">
+      <a href="../../../Design%20Thinking/Brainstorm/" class="md-nav__link">
         
   
   
@@ -1057,7 +1250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mapa_mental/" class="md-nav__link">
+      <a href="../../../Design%20Thinking/mapa_mental/" class="md-nav__link">
         
   
   
@@ -1085,7 +1278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../design_thinking/" class="md-nav__link">
+      <a href="../../../Design%20Thinking/design_thinking/" class="md-nav__link">
         
   
   
@@ -1113,7 +1306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Design Thinking/historiasde_usuario.md" class="md-nav__link">
+      <a href="../../../Design Thinking/historiasde_usuario.md" class="md-nav__link">
         
   
   
@@ -1141,7 +1334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../analise_de_tarefas/" class="md-nav__link">
+      <a href="../../../Design%20Thinking/analise_de_tarefas/" class="md-nav__link">
         
   
   
@@ -1166,35 +1359,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Prototipagem Baixa Fidelidade
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../Design%20Thinking/prototipo_baixa_fidelidade/" class="md-nav__link">
         
   
   
@@ -1210,393 +1378,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introducao" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Introdução
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#metodologia" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Metodologia
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prototipo-de-baixa-fidelidade" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Protótipo de baixa fidelidade
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Protótipo de baixa fidelidade">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#versao-10" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Versão 1.0
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tela-login" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tela Login
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tela-cadastro-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tela Cadastro 1
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tela-cadastro-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tela Cadastro 2
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tela-esqueceu-senha" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tela Esqueceu Senha
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tela-do-feed" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tela do Feed
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tela-feed-com-configuracoes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tela Feed com configurações
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tela-perfil" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tela Perfil
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tela-cadastrar-torneio-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tela Cadastrar torneio 1
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tela-cadastrar-torneio-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tela Cadastrar torneio 2
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tela-cadastrar-torneio-3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tela Cadastrar torneio 3
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tela-cadastrar-torneio-4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tela Cadastrar torneio 4
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tela-com-meus-torneios" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tela com meus torneios
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tela-de-inscricao-em-torneio" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tela de inscrição em torneio
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#versao-20" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Versão 2.0
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tela-login_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tela Login
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tela-cadastro" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tela Cadastro
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tela-esqueceu-senha_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tela Esqueceu Senha
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tela-perfil_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tela Perfil
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tela-do-feed_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tela do Feed
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tela-cadastrar-em-um-torneio" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tela Cadastrar em um torneio
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tela-cadastrar-torneio" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tela Cadastrar torneio
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tela-cadastrar-torneio-2_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tela Cadastrar torneio 2
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tela-dos-meus-torneios" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tela dos meus torneios
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tela-das-chaves-do-torneio" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tela das chaves do torneio
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tela-das-estatiscicas" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tela das estatíscicas
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tela-de-adicionar-resultado-das-partidas" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tela de adicionar resultado das partidas
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusao" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Conclusão
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#referencias" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Referências
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#autores" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Autor(es)
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1676,7 +1457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Sprint%20Planning/planejamento/" class="md-nav__link">
+      <a href="../../../Sprint%20Planning/planejamento/" class="md-nav__link">
         
   
   
@@ -1704,7 +1485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Sprint%20Planning/product_backlog/" class="md-nav__link">
+      <a href="../../../Sprint%20Planning/product_backlog/" class="md-nav__link">
         
   
   
@@ -1732,7 +1513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Sprint%20Planning/sprint_backlog/" class="md-nav__link">
+      <a href="../../../Sprint%20Planning/sprint_backlog/" class="md-nav__link">
         
   
   
@@ -1760,7 +1541,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Sprint%20Planning/definicao_de_pronto/" class="md-nav__link">
+      <a href="../../../Sprint%20Planning/definicao_de_pronto/" class="md-nav__link">
         
   
   
@@ -1813,7 +1594,7 @@
   
   
     <li class="md-path__item">
-      <a href="../.." class="md-path__link">
+      <a href="../../.." class="md-path__link">
         
   <span class="md-ellipsis">
     Home
@@ -1831,10 +1612,28 @@
     
     
       <li class="md-path__item">
-        <a href="../" class="md-path__link">
+        <a href="../../aulas/" class="md-path__link">
           
   <span class="md-ellipsis">
-    Design Thinking
+    Disciplina
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../04_design_thinking/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Roteiros
   </span>
 
         </a>
@@ -1856,125 +1655,178 @@
   
 
 
-  <h1>Prototipagem Baixa Fidelidade</h1>
-
-<h2 id="introducao">Introdução<a class="headerlink" href="#introducao" title="Permanent link">&para;</a></h2>
-<p align = "justify">
-A construção do protótipo de alta fidelidade auxilia a equipe de desenvolvimento a encontrar um nível de detalhes abrangentes, extrair funcionalidades, testar usabilidade, e também fornece uma base para o gerenciamento do projeto pois com o protótipo é possível realizar estimativas de quanto tempo será necessário desempenhar em cada funcionalidade.
-</p>
-
-<h2 id="metodologia">Metodologia<a class="headerlink" href="#metodologia" title="Permanent link">&para;</a></h2>
-<p align = "justify">
-Iniciamos o projeto através dos levantamentos iniciais da equipe, após discussões a ferramenta Figma foi selecionada para produzir o protótipo de alta fidelidade com auxílio do Material Design Color Tool.
-</p>
-
-<h2 id="prototipo-de-baixa-fidelidade">Protótipo de baixa fidelidade<a class="headerlink" href="#prototipo-de-baixa-fidelidade" title="Permanent link">&para;</a></h2>
-<h3 id="versao-10">Versão 1.0<a class="headerlink" href="#versao-10" title="Permanent link">&para;</a></h3>
-<h3 id="tela-login">Tela Login<a class="headerlink" href="#tela-login" title="Permanent link">&para;</a></h3>
-<p>Prototipo 1
-<img alt="Alt text" src="https://example.com/image.jpg" title="Image Title" /></p>
-<h3 id="tela-cadastro-1">Tela Cadastro 1<a class="headerlink" href="#tela-cadastro-1" title="Permanent link">&para;</a></h3>
-<p>[![Prototipo 2]</p>
-<h3 id="tela-cadastro-2">Tela Cadastro 2<a class="headerlink" href="#tela-cadastro-2" title="Permanent link">&para;</a></h3>
-<p>[![Prototipo 3]</p>
-<h3 id="tela-esqueceu-senha">Tela Esqueceu Senha<a class="headerlink" href="#tela-esqueceu-senha" title="Permanent link">&para;</a></h3>
-<p>[![Prototipo 4]</p>
-<h3 id="tela-do-feed">Tela do Feed<a class="headerlink" href="#tela-do-feed" title="Permanent link">&para;</a></h3>
-<p>[![Prototipo 5]</p>
-<h3 id="tela-feed-com-configuracoes">Tela Feed com configurações<a class="headerlink" href="#tela-feed-com-configuracoes" title="Permanent link">&para;</a></h3>
-<p>[![Prototipo 6]</p>
-<h3 id="tela-perfil">Tela Perfil<a class="headerlink" href="#tela-perfil" title="Permanent link">&para;</a></h3>
-<p>[![Prototipo 7]</p>
-<h3 id="tela-cadastrar-torneio-1">Tela Cadastrar torneio 1<a class="headerlink" href="#tela-cadastrar-torneio-1" title="Permanent link">&para;</a></h3>
-<p>[![Prototipo 8]</p>
-<h3 id="tela-cadastrar-torneio-2">Tela Cadastrar torneio 2<a class="headerlink" href="#tela-cadastrar-torneio-2" title="Permanent link">&para;</a></h3>
-<p>[![Prototipo 9]</p>
-<h3 id="tela-cadastrar-torneio-3">Tela Cadastrar torneio 3<a class="headerlink" href="#tela-cadastrar-torneio-3" title="Permanent link">&para;</a></h3>
-<p>[![Prototipo 10]</p>
-<h3 id="tela-cadastrar-torneio-4">Tela Cadastrar torneio 4<a class="headerlink" href="#tela-cadastrar-torneio-4" title="Permanent link">&para;</a></h3>
-<p>[![Prototipo 11]</p>
-<h3 id="tela-com-meus-torneios">Tela com meus torneios<a class="headerlink" href="#tela-com-meus-torneios" title="Permanent link">&para;</a></h3>
-<p>[![Prototipo 12]</p>
-<h3 id="tela-de-inscricao-em-torneio">Tela de inscrição em torneio<a class="headerlink" href="#tela-de-inscricao-em-torneio" title="Permanent link">&para;</a></h3>
-<p>[![Prototipo 13]</p>
-<p align = "justify">
-Na primeira versão do protótipo utilizamos a ferramenta <a href="https://material.io/resources/color/#!/?view.left=0&view.right=0">Material Design Color Tool</a>  para auxiliar na criação da paleta de cores do aplicativo, definimos as cores base do aplicativo mas as cores definidas para as telas 12 e 13 ainda não foram decididas.
-</p>
-
-<h3 id="versao-20">Versão 2.0<a class="headerlink" href="#versao-20" title="Permanent link">&para;</a></h3>
-<h3 id="tela-login_1">Tela Login<a class="headerlink" href="#tela-login_1" title="Permanent link">&para;</a></h3>
-<p>[![Prototipo 1]</p>
-<h3 id="tela-cadastro">Tela Cadastro<a class="headerlink" href="#tela-cadastro" title="Permanent link">&para;</a></h3>
-<p>[![Prototipo 2]</p>
-<h3 id="tela-esqueceu-senha_1">Tela Esqueceu Senha<a class="headerlink" href="#tela-esqueceu-senha_1" title="Permanent link">&para;</a></h3>
-<p>[![Prototipo 3]</p>
-<h3 id="tela-perfil_1">Tela Perfil<a class="headerlink" href="#tela-perfil_1" title="Permanent link">&para;</a></h3>
-<p>[![Prototipo 4]</p>
-<h3 id="tela-do-feed_1">Tela do Feed<a class="headerlink" href="#tela-do-feed_1" title="Permanent link">&para;</a></h3>
-<p>[![Prototipo 5]</p>
-<h3 id="tela-cadastrar-em-um-torneio">Tela Cadastrar em um torneio<a class="headerlink" href="#tela-cadastrar-em-um-torneio" title="Permanent link">&para;</a></h3>
-<p>[![Prototipo 6]</p>
-<h3 id="tela-cadastrar-torneio">Tela Cadastrar torneio<a class="headerlink" href="#tela-cadastrar-torneio" title="Permanent link">&para;</a></h3>
-<p>[![Prototipo 7]</p>
-<h3 id="tela-cadastrar-torneio-2_1">Tela Cadastrar torneio 2<a class="headerlink" href="#tela-cadastrar-torneio-2_1" title="Permanent link">&para;</a></h3>
-<p>[![Prototipo 8]</p>
-<h3 id="tela-dos-meus-torneios">Tela dos meus torneios<a class="headerlink" href="#tela-dos-meus-torneios" title="Permanent link">&para;</a></h3>
-<p>[![Prototipo 9]</p>
-<h3 id="tela-das-chaves-do-torneio">Tela das chaves do torneio<a class="headerlink" href="#tela-das-chaves-do-torneio" title="Permanent link">&para;</a></h3>
-<p>[![Prototipo 10]</p>
-<h3 id="tela-das-estatiscicas">Tela das estatíscicas<a class="headerlink" href="#tela-das-estatiscicas" title="Permanent link">&para;</a></h3>
-<p>[![Prototipo 11]</p>
-<h3 id="tela-de-adicionar-resultado-das-partidas">Tela de adicionar resultado das partidas<a class="headerlink" href="#tela-de-adicionar-resultado-das-partidas" title="Permanent link">&para;</a></h3>
-<p>[![Prototipo 12]</p>
-<p>link para o <code>&lt;a href="https://www.figma.com/file/karoCnQtvMXWHEwdMuhQs0/Prototipo?node-id=0%3A1"&gt;</code>Protótipo <code>&lt;/a&gt;</code></p>
-<h2 id="conclusao">Conclusão<a class="headerlink" href="#conclusao" title="Permanent link">&para;</a></h2>
-<p align = "justify">
-A partir da elaboração do protótipo foi possível ter uma noção inicial da interface do usuário, definindo fluxo, paleta de cores, botões, app bars e diversas outras funcionalidades
-</p>
-
-<h2 id="referencias">Referências<a class="headerlink" href="#referencias" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>Material Design Color Tool. Disponível em:  https://material.io/resources/color/#!/?view.left=0&amp;view.right=0</p>
-<p>PMI. Um guia do conhecimento em gerenciamento de projetos. Guia PMBOK® 5a. ed. EUA: Project Management Institute, 2013.</p>
-<p>Ferramenta Figma. Disponível em https://www.figma.com</p>
-</blockquote>
-<h2 id="autores">Autor(es)<a class="headerlink" href="#autores" title="Permanent link">&para;</a></h2>
+<h1 id="07-sprint-planning-aplicativo-web-de-e-commerce">07 - <strong>Sprint Planning: Aplicativo Web de E-commerce</strong><a class="headerlink" href="#07-sprint-planning-aplicativo-web-de-e-commerce" title="Permanent link">&para;</a></h1>
+<p><strong>Tema proposto:</strong>
+<strong>Desenvolvimento de um aplicativo web para gestão de pedidos, estoque e atendimento ao cliente</strong></p>
+<p><strong>Contexto:</strong>
+Uma empresa de e-commerce quer melhorar a operação de vendas e oferecer mais autonomia aos clientes. O produto será planejado para vendedores, gerentes e clientes, com foco em busca de clientes, consulta de estoque, acompanhamento de pedidos e relatórios.</p>
+<p><strong>Tecnologias:</strong> HTML, CSS e JavaScript ou React, conforme a definição da equipe e os conteúdos trabalhados em aula. Integrações externas podem ser simuladas durante o protótipo.</p>
+<h2 id="objetivo-do-projeto">Objetivo do Projeto<a class="headerlink" href="#objetivo-do-projeto" title="Permanent link">&para;</a></h2>
+<p>Planejar e desenvolver, de forma incremental, uma primeira versão do aplicativo que permita:</p>
+<ol>
+<li>Buscar clientes e consultar a disponibilidade de produtos durante uma venda.</li>
+<li>Registrar pedidos e aplicar descontos respeitando as permissões de cada perfil.</li>
+<li>Manter as informações de estoque atualizadas e sinalizar itens críticos.</li>
+<li>Consultar relatórios de vendas e acompanhar pedidos.</li>
+<li>Oferecer um canal básico de suporte para clientes.</li>
+</ol>
+<h2 id="organizacao-do-product-backlog">Organização do Product Backlog<a class="headerlink" href="#organizacao-do-product-backlog" title="Permanent link">&para;</a></h2>
+<p>As histórias abaixo derivam da análise de tarefas e dos protótipos do aplicativo. A prioridade é uma referência inicial para a atividade e pode ser revista pelo Product Owner.</p>
 <table>
 <thead>
 <tr>
-<th>Data</th>
-<th>Versão</th>
-<th>Descrição</th>
-<th>Autor(es)</th>
+<th>ID</th>
+<th>História de usuário</th>
+<th>Critérios de aceitação</th>
+<th>Prioridade</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>07/09/20</td>
-<td>1.0</td>
-<td>Criação do documento</td>
-<td>Lucas Alexandre e Matheus Estanislau</td>
+<td><strong>US01</strong></td>
+<td>Como vendedor, quero buscar clientes por nome ou CPF para agilizar o atendimento.</td>
+<td>A busca apresenta sugestões enquanto o usuário digita e retorna resultados em até 2 segundos.</td>
+<td>Must</td>
 </tr>
 <tr>
-<td>07/09/20</td>
-<td>1.1</td>
-<td>Adicionado as imagens do protótipo</td>
-<td>Lucas Alexandre e Matheus Estanislau</td>
+<td><strong>US02</strong></td>
+<td>Como vendedor, quero aplicar descontos personalizados para atender às necessidades do cliente.</td>
+<td>O desconto é validado conforme o limite permitido para o perfil do vendedor.</td>
+<td>Should</td>
 </tr>
 <tr>
-<td>07/09/20</td>
-<td>1.2</td>
-<td>Adicionado conclusão e referências</td>
-<td>Lucas Alexandre e Matheus Estanislau</td>
+<td><strong>US03</strong></td>
+<td>Como vendedor, quero consultar o estoque durante a venda para evitar oferecer produtos indisponíveis.</td>
+<td>A disponibilidade é exibida junto ao produto e itens com quantidade igual a zero aparecem como <strong>ESGOTADO</strong>.</td>
+<td>Must</td>
 </tr>
 <tr>
-<td>26/10/20</td>
-<td>2.0</td>
-<td>Adicionada a versão 2.0 do protótipo</td>
-<td>João Pedro, Lucas Alexandre, Matheus Estanislau, Moacir Mascarenha e Renan Cristyan</td>
+<td><strong>US04</strong></td>
+<td>Como gerente, quero aprovar descontos acima de 10% para proteger a margem de lucro.</td>
+<td>Solicitações acima de 10% ficam pendentes até uma decisão do gerente e exibem o vendedor, o pedido e o percentual solicitado.</td>
+<td>Could</td>
+</tr>
+<tr>
+<td><strong>US05</strong></td>
+<td>Como gerente, quero exportar relatórios de vendas por período para analisar os resultados.</td>
+<td>O gerente seleciona um período e exporta o relatório em PDF ou Excel.</td>
+<td>Should</td>
+</tr>
+<tr>
+<td><strong>US06</strong></td>
+<td>Como gerente, quero receber alertas de estoque crítico para evitar a falta de produtos.</td>
+<td>O sistema sinaliza produtos com menos de 5 unidades disponíveis.</td>
+<td>Should</td>
+</tr>
+<tr>
+<td><strong>US07</strong></td>
+<td>Como cliente, quero acompanhar o status do meu pedido para saber quando ele será entregue.</td>
+<td>O pedido exibe as etapas Preparação, Entrega e Entregue, com a previsão disponível quando informada.</td>
+<td>Should</td>
+</tr>
+<tr>
+<td><strong>US08</strong></td>
+<td>Como cliente, quero solicitar uma troca pelo canal de suporte para resolver problemas sem precisar ligar.</td>
+<td>O histórico do pedido oferece a ação <strong>Abrir Chamado</strong> e permite registrar a solicitação.</td>
+<td>Could</td>
+</tr>
+<tr>
+<td><strong>US09</strong></td>
+<td>Como sistema, preciso sincronizar o estoque com o PDV a cada 5 minutos para reduzir vendas de itens indisponíveis.</td>
+<td>A sincronização ocorre em intervalos de até 5 minutos e atualiza a disponibilidade exibida no aplicativo.</td>
+<td>Must</td>
+</tr>
+<tr>
+<td><strong>US10</strong></td>
+<td>Como equipe de UX, queremos redesenhar o fluxo de relatórios para reduzir etapas desnecessárias.</td>
+<td>Um teste A/B demonstra redução de 50% no tempo de geração dos relatórios.</td>
+<td>Won't nesta versão</td>
 </tr>
 </tbody>
 </table>
+<h3 id="priorizacao-inicial-moscow">Priorização inicial (MoSCoW)<a class="headerlink" href="#priorizacao-inicial-moscow" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Must:</strong> US01, US03 e US09. São essenciais para uma operação básica de venda com consulta confiável de disponibilidade.</li>
+<li><strong>Should:</strong> US02, US05, US06 e US07. Agregam valor importante à operação e à experiência do cliente.</li>
+<li><strong>Could:</strong> US04 e US08. Podem ser incluídas se houver capacidade após a entrega dos itens de maior prioridade.</li>
+<li><strong>Won't nesta versão:</strong> US10. Fica para uma versão futura; a equipe poderá coletar dados de usabilidade sem assumir a implementação do teste A/B neste ciclo.</li>
+</ul>
+<h2 id="sprint-backlog">Sprint Backlog<a class="headerlink" href="#sprint-backlog" title="Permanent link">&para;</a></h2>
+<p>Planejamento de referência para <strong>4 sprints de 2 semanas</strong>. A equipe deve confirmar capacidade, dependências e estimativas durante cada Sprint Planning. As tarefas são exemplos e podem ser divididas pelo time.</p>
+<h3 id="sprint-1-estrutura-e-consulta-de-produtos">Sprint 1: Estrutura e consulta de produtos<a class="headerlink" href="#sprint-1-estrutura-e-consulta-de-produtos" title="Permanent link">&para;</a></h3>
+<p><strong>Meta da Sprint:</strong> disponibilizar uma base navegável para vendedores localizarem clientes e verificarem a disponibilidade dos produtos.</p>
+<p><strong>Histórias foco:</strong> US01 e US03.</p>
+<p><strong>Tarefas sugeridas:</strong></p>
+<ul>
+<li>Criar a estrutura das telas e a navegação inicial do aplicativo.</li>
+<li>Implementar busca de clientes por nome ou CPF com dados de exemplo.</li>
+<li>Exibir catálogo de produtos com quantidade e estado de disponibilidade.</li>
+<li>Destacar visualmente os produtos esgotados.</li>
+<li>Testar a busca e a consulta de estoque com cenários válidos e sem resultados.</li>
+</ul>
+<h3 id="sprint-2-registro-de-pedido-e-sincronizacao-de-estoque">Sprint 2: Registro de pedido e sincronização de estoque<a class="headerlink" href="#sprint-2-registro-de-pedido-e-sincronizacao-de-estoque" title="Permanent link">&para;</a></h3>
+<p><strong>Meta da Sprint:</strong> permitir que o vendedor registre um pedido com disponibilidade atualizada e regras básicas de desconto.</p>
+<p><strong>Histórias foco:</strong> US09 e US02. A US04 pode entrar como item adicional se a equipe concluir os itens Must e Should planejados.</p>
+<p><strong>Tarefas sugeridas:</strong></p>
+<ul>
+<li>Definir e implementar a estratégia de sincronização do estoque com o PDV ou sua simulação.</li>
+<li>Atualizar a disponibilidade apresentada no catálogo após a sincronização.</li>
+<li>Criar o fluxo de seleção de cliente e inclusão de produtos no pedido.</li>
+<li>Calcular subtotal, desconto e total do pedido.</li>
+<li>Validar o limite de desconto conforme o perfil do vendedor.</li>
+<li>Caso a US04 seja selecionada, criar o estado de aprovação pendente e as ações para o gerente aprovar ou rejeitar.</li>
+</ul>
+<h3 id="sprint-3-gestao-e-acompanhamento">Sprint 3: Gestão e acompanhamento<a class="headerlink" href="#sprint-3-gestao-e-acompanhamento" title="Permanent link">&para;</a></h3>
+<p><strong>Meta da Sprint:</strong> apoiar o gerente na operação e permitir que o cliente acompanhe o andamento de um pedido.</p>
+<p><strong>Histórias foco:</strong> US05, US06 e US07.</p>
+<p><strong>Tarefas sugeridas:</strong></p>
+<ul>
+<li>Criar filtros de período e opções de relatório de vendas.</li>
+<li>Implementar exportação em PDF ou Excel, ou simular a geração caso a tecnologia do protótipo não ofereça essa integração.</li>
+<li>Sinalizar produtos com menos de 5 unidades em estoque.</li>
+<li>Exibir os estados do pedido para o cliente e a previsão de entrega, quando disponível.</li>
+<li>Validar os fluxos com dados de diferentes períodos, níveis de estoque e status de pedido.</li>
+</ul>
+<h3 id="sprint-4-suporte-validacao-e-entrega">Sprint 4: Suporte, validação e entrega<a class="headerlink" href="#sprint-4-suporte-validacao-e-entrega" title="Permanent link">&para;</a></h3>
+<p><strong>Meta da Sprint:</strong> concluir os itens selecionados para a versão, validar os principais fluxos e preparar a demonstração do produto.</p>
+<p><strong>História foco:</strong> US08, se houver capacidade. Se a US04 não tiver sido selecionada na Sprint 2, o Product Owner pode considerá-la nesta sprint antes da US08.</p>
+<p><strong>Tarefas sugeridas:</strong></p>
+<ul>
+<li>Implementar a abertura de chamado a partir do histórico do pedido, se a US08 estiver dentro da capacidade.</li>
+<li>Corrigir problemas encontrados nos fluxos de venda, estoque, relatórios e acompanhamento.</li>
+<li>Realizar testes de usabilidade com representantes das personas ou colegas de turma.</li>
+<li>Verificar responsividade e acessibilidade básica das telas principais.</li>
+<li>Preparar uma demonstração e registrar funcionalidades concluídas e itens adiados.</li>
+<li>Publicar o protótipo em um servidor estático, se aplicável ao escopo da disciplina.</li>
+</ul>
+<h2 id="definicao-de-pronto">Definição de Pronto<a class="headerlink" href="#definicao-de-pronto" title="Permanent link">&para;</a></h2>
+<p>Uma história pode ser considerada pronta quando:</p>
+<ul>
+<li>Os critérios de aceitação foram atendidos e demonstrados.</li>
+<li>O fluxo foi testado com dados representativos, incluindo situações de erro ou ausência de resultados.</li>
+<li>A interface mantém consistência visual e funciona nos tamanhos de tela definidos pela equipe.</li>
+<li>O código foi integrado à versão compartilhada do projeto e não impede os fluxos já concluídos.</li>
+<li>A documentação ou as instruções necessárias para a demonstração foram atualizadas.</li>
+</ul>
+<h2 id="dinamica-da-atividade">Dinâmica da Atividade<a class="headerlink" href="#dinamica-da-atividade" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Formação dos papéis:</strong> organizar cada grupo com Product Owner, Scrum Master e equipe de desenvolvimento.</li>
+<li><strong>Refinamento:</strong> revisar as histórias, esclarecer critérios de aceitação e identificar dependências entre pedido, estoque e permissões.</li>
+<li><strong>Priorização:</strong> ordenar o backlog por valor, risco e esforço, registrando qualquer mudança em relação ao MoSCoW inicial.</li>
+<li><strong>Planejamento:</strong> definir a meta da sprint, selecionar histórias compatíveis com a capacidade e decompor o trabalho em tarefas.</li>
+<li><strong>Adaptação a mudanças:</strong> apresentar uma nova necessidade, como permitir cancelamento de pedidos, e discutir seu impacto sem assumir trabalho acima da capacidade.</li>
+<li><strong>Revisão e retrospectiva:</strong> ao final de cada sprint, demonstrar o incremento, coletar feedback e registrar uma melhoria para a próxima sprint.</li>
+</ol>
+<h2 id="checklist-do-sprint-planning">Checklist do Sprint Planning<a class="headerlink" href="#checklist-do-sprint-planning" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> A meta da sprint está clara e orientada a um resultado demonstrável.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> As histórias selecionadas têm critérios de aceitação compreendidos pela equipe.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Dependências, riscos e integrações simuladas estão identificados.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> O trabalho cabe na capacidade acordada para a sprint.</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Cada integrante sabe como acompanhar o progresso e comunicar impedimentos.</li>
+</ul>
+<h2 id="resultado-esperado">Resultado Esperado<a class="headerlink" href="#resultado-esperado" title="Permanent link">&para;</a></h2>
+<p>Ao final do planejamento, cada grupo terá um Product Backlog priorizado e quatro propostas de Sprint Backlog, com metas, histórias, tarefas e critérios para validar os incrementos do aplicativo de e-commerce.</p>
 
 
 
@@ -2039,16 +1891,16 @@ A partir da elaboração do protótipo foi possível ter uma noção inicial da 
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.path", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.copy", "navigation.indexes", "navigation.instant", "navigation.instant.progress", "navigation.path", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../../assets/mkdocs_puml/puml.js"></script>
+        <script src="../../../assets/mkdocs_puml/puml.js"></script>
       
         <script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
       
-        <script src="../../assets/mkdocs_puml/interaction.js"></script>
+        <script src="../../../assets/mkdocs_puml/interaction.js"></script>
       
     
   </body>
