@@ -28,12 +28,13 @@ nav:
       - Github: Disciplina/github.md
       - Mkdocs: Disciplina/mkdocs.md
       - CodeSpace: Disciplina/CodeSpace.md
-#      - Roteiros: 
-#          - Design Thinking: Disciplina/Roteiros/04_design_thinking.md
-#          - AHT: Disciplina/Roteiros/07_aht.md
-#          - Sprint Planning: Disciplina/Roteiros/07_receitas.md
-#          - Epic, Feature, User Story: Disciplina/Roteiros/07_epics_features_user_stories.md
-#          - Protótipo de Baixa Fidelidade: Disciplina/Roteiros/07_proto.md
+      - Roteiros: 
+          - 04 - Design Thinking: Disciplina/Roteiros/04_design_thinking.md
+          - 07 - Sprint Planning E-commerce: Disciplina/Roteiros/07_ecommerce.md
+          - 10 - AHT: Disciplina/Roteiros/07_aht.md
+          - 10 - Sprint Planning: Disciplina/Roteiros/07_receitas.md
+          - 11 - Epic, Feature, User Story: Disciplina/Roteiros/07_epics_features_user_stories.md
+          - 12 - Protótipo de Baixa Fidelidade: Disciplina/Roteiros/07_proto.md
 #          - JSON Server (CadProj): Disciplina/Roteiros/16_json_server_cadproj.md
 #          - Router (React Router): Disciplina/Roteiros/16_router.md
   
