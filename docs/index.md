@@ -28,21 +28,21 @@ hide:
     <a href="https://iskills.ibmec.edu.br" target="_blank"><img src="assets/iskills.png" alt="ibmec iskills" style="max-width:220px; width:auto; height:240px; border-radius:6px; align: center;" /></a>
     
 
--   :material-github:{ .lg .right } __PECD1_26.2_8002_I__
+-   :material-github:{ .lg .right } __PECDI_26.2_8002_I__
 
     ---
 
     Caio, Paulo, Marcos e Pedro
 
-    [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PECD1_26.2_8002_I)
+    [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PECDI_26.2_8002_I)
 
--   :material-github:{ .lg .right } __PECD1_26.2_8002_II__
+-   :material-github:{ .lg .right } __PECDI_26.2_8002_II__
 
     ---
 
     xxx,xxx,xxx,xxx
 
-    [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PECD1_26.2_8002_II)
+    [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PECDI_26.2_8002_II)
 
 </div>
 
