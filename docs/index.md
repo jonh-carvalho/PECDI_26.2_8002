@@ -32,7 +32,7 @@ hide:
 
     ---
 
-    Caio, Paulo, Marcos e Pedro
+    Bruno, Marcos e Pedro
 
     [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PECDI_26.2_8002_I)
 
@@ -40,7 +40,7 @@ hide:
 
     ---
 
-    xxx,xxx,xxx,xxx
+    André,Caio e Paulo
 
     [:octicons-arrow-right-24: Repositório](https://github.com/Projetos-de-Extensao/PECDI_26.2_8002_II)
 
