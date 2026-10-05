@@ -11,6 +11,15 @@ Aula | Conteúdo
 **__07__ - 14/09/26** |  <br> [Análise de Tarefas - AHT](../assets/Aulas/Análise%20de%20Tarefas.pdf) <br> - [User Stories](./Roteiros/07_epics_features_user_stories.md) 
 **__08__ - 21/09/26** | :material-check: :material-check: Protótipo de Baixa Fidelidade
 **__09__ - 28/09/26** | :material-check: AP1 - Apresentação
+**__10__ - 05/10/26** | :material-check: Roteiros - Introdução ao React - <br> **Sprint I** - Site HTML/CSS/
+**__11__ - 12/10/26** | :material-check:[Front-End Checklist](https://frontendchecklist.io/) <br>:material-check: Validação HTML, CSS, Link <br>:material-check: [Wcag](https://www.guia-wcag.com/)
+**__12__ - 19/10/26** | :material-check: Roteiros React - Props e State - <br> **Sprint II** - Site React Componentes 
+**__13__ - 26/10/26** | :material-check: [Avaliação de Interfaces](../assets/Aulas/Avaliação_de_Interfaces.pdf)
+**__14__ - 02/11/26** | :material-check: Roteiros React - Filtros <br>  Sprint III - Site React Props e State
+**__15__ - 09/11/26** | :material-check: 
+**__16__ - 16/11/26** | :material-check: **AP2 - Apresentação**
+**__17__ - 23/11/26** | :material-check: 
+**__18__ - 30/11/26** | :material-check: **AS**
 
 <!--
 
