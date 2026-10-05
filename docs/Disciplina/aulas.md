@@ -8,13 +8,13 @@ Aula | Conteúdo
 **__04__ - 24/08/26** | :material-check: Apresentação de Tema do Projeto, Principais Funcionalidades do Projeto, App Web Similares <br> :material-check: Site Mkdocs  <br> :material-check: Configuração repositório Github <br>
 **__05__ - 31/08/26** |  :material-check: Design Thinking <br> :material-check: 5w2h <br> :material-check:[Brainstorm](../assets/Aulas/O%20processo%20de brainstorm.pdf) <br> :material-check: [Mapa Mental](../assets/Aulas/Mapa%20Mental.pdf)
 **__06__ - 07/09/26** | :material-check: Feriado
-**__07__ - 14/09/26** |  <br> [Análise de Tarefas - AHT](../assets/Aulas/Análise%20de%20Tarefas.pdf) <br> - [User Stories](./Roteiros/07_epics_features_user_stories.md) 
-**__08__ - 21/09/26** | :material-check: :material-check: Protótipo de Baixa Fidelidade
+**__07__ - 14/09/26** |  <br> [Análise de Tarefas - AHT](../assets/Aulas/Análise%20de%20Tarefas.pdf)  
+**__08__ - 21/09/26** | :material-check: 
 **__09__ - 28/09/26** | :material-check: AP1 - Apresentação
-**__10__ - 05/10/26** | :material-check: Roteiros - Introdução ao React - <br> **Sprint I** - Site HTML/CSS/
-**__11__ - 12/10/26** | :material-check:[Front-End Checklist](https://frontendchecklist.io/) <br>:material-check: Validação HTML, CSS, Link <br>:material-check: [Wcag](https://www.guia-wcag.com/)
-**__12__ - 19/10/26** | :material-check: Roteiros React - Props e State - <br> **Sprint II** - Site React Componentes 
-**__13__ - 26/10/26** | :material-check: [Avaliação de Interfaces](../assets/Aulas/Avaliação_de_Interfaces.pdf)
+**__10__ - 05/10/26** | :material-check:  - Site HTML/CSS/ <br> :material-check: Protótipo de Baixa  Fidelidade <br> :material-check: [User Stories](./Roteiros/07_epics_features_user_stories.md)
+**__11__ - 12/10/26** | :material-check: Feriado
+**__12__ - 19/10/26** | :material-check: Roteiros - Introdução ao React - <br> **Sprint I** <br>:material-check: [Front-End Checklist](https://frontendchecklist.io/) <br>:material-check: Validação HTML, CSS, Link <br>:material-check: [Wcag](https://www.guia-wcag.com/) 
+**__13__ - 26/10/26** | :material-check: Roteiros React - Props e State - <br> **Sprint II** - Site React Componentes <br> :material-check:[Avaliação de Interfaces](../assets/Aulas/Avaliação_de_Interfaces.pdf)
 **__14__ - 02/11/26** | :material-check: Roteiros React - Filtros <br>  Sprint III - Site React Props e State
 **__15__ - 09/11/26** | :material-check: 
 **__16__ - 16/11/26** | :material-check: **AP2 - Apresentação**
