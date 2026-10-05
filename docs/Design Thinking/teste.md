@@ -7,3 +7,10 @@ Como usuário, quero acessar as informações de que preciso de forma simples e 
 - As informações devem ser apresentadas de forma clara e organizada.
 - Devo conseguir localizar o que preciso sem etapas desnecessárias.
 - A experiência deve funcionar em diferentes dispositivos.
+
+sdljksdfklsdfkls
+sdf]sdf]sf
+sf
+sdf
+sdf
+sf
