@@ -15,10 +15,12 @@ nav:
               - 4 - Componentes: React\04_Componentes.md
               - 5 - Props: React\05_Props_e_Comunicação.md
               - 6 - Estado: React\06_useState.md
-              - 7 - Eventos: React\07_Eventos_e_Forms.md
-              - 8 - Listas: React\08_Listas__Render_Condicional.md
-              - 9 - Http Api: React\09_HTTP_APIs.md
-              - 10 - useEffect: React\10_useEffect.md
+              - 7 - Estado Aplicado: React\06_useState_Aplicado.md
+#              - 8 - Listas: React\08_Listas__Render_Condicional.md
+#              - 9 - Http Api: React\09_HTTP_APIs.md
+              - 8 - Http Api: React\09_HTTP_APIs_IBGE_Simplificado.md
+#              - 10 - useEffect: React\10_useEffect.md
+              - 9 - useEffect: React\10_useEffect_IBGE_Simplificado.md
               - 11 - Filtros Básicos: React\11_Filtros_Basicos.md
               - 12 - Favoritos e Persistência: React\12_Favoritos_localStorage.md
               - 13 - Busca Avançada e Refinamentos: React\13_Filtros_Busca.md
