@@ -1,8 +1,4 @@
-Este roteiro foi desenvolvido para guiá-lo, passo a passo, na construção de uma base sólida em navegação com React Router. Seguindo uma progressão lógica, você sairá do zero absoluto até a criação de uma aplicação funcional com páginas, navegação e layouts estruturados.
-
----
-
-### 📚 Roteiro de Aprendizagem: React Router do Básico ao Funcional
+###  Roteiro de Aprendizagem: React Router do Básico ao Funcional
 
 Este roteiro é prático e dividido em missões. Cada missão introduz um conceito fundamental, culminando em um projeto funcional.
 
@@ -64,7 +60,7 @@ Agora que o roteador está ativo, você precisa criar os conteúdos que serão n
 ```jsx
 // src/pages/Home.jsx
 function Home() {
-  return <h1>🏠 Página Inicial</h1>;
+  return <h1>Página Inicial</h1>;
 }
 export default Home;
 ```
@@ -72,7 +68,7 @@ export default Home;
 ```jsx
 // src/pages/Sobre.jsx
 function Sobre() {
-  return <h1>📖 Sobre Nós</h1>;
+  return <h1>Sobre Nós</h1>;
 }
 export default Sobre;
 ```
@@ -207,5 +203,3 @@ function App() {
 }
 export default App;
 ```
-
-Com este roteiro, você terá um conhecimento prático e sólido dos fundamentos do React Router, pronto para construir aplicações web mais completas e com navegação fluida.

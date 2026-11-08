@@ -21,13 +21,6 @@ hide:
     - Github - MkDocs 
     - Git - GitHub Pages
 
--   __ISkills__
-    
-    ---
-
-    <a href="https://iskills.ibmec.edu.br" target="_blank"><img src="assets/iskills.png" alt="ibmec iskills" style="max-width:220px; width:auto; height:240px; border-radius:6px; align: center;" /></a>
-    
-
 -   :material-github:{ .lg .right } __PECDI_26.2_8002_I__
 
     ---
