@@ -49,7 +49,7 @@ npx json-server --watch db.json --port 8000 --delay 300
 Usando instalação local (se fez `npm i -D json-server`):
 
 ```powershell
-.\u005cnode_modulesjson-serverbinjson-server.js --watch db.json --port 8000 --delay 300
+json-server json-server.js --watch db.json --port 8000  
 ```
 
 Observações:
